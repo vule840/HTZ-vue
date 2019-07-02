@@ -235,6 +235,15 @@ MODAL
 *********************************/
 /* Makni modal header i footer */
 
+
+#prijava{
+	h2{
+		text-align: center;
+		font-size: 1.5rem;
+		padding: 1rem 0;
+	}
+}
+
 .modal-header {
 	justify-content: center;
 	.modal-title{
@@ -242,6 +251,7 @@ MODAL
 	font-size: 3rem;
 	text-align:center;
 	padding-bottom: 1rem;
+	font-weight: normal;
 	}
 	// display: none;
 	
@@ -251,7 +261,7 @@ MODAL
 	display: none;
 }
 div#modal-multi-1___BV_modal_content_ {
-    padding: 3rem 7rem 7rem 7rem;
+    padding: 2rem 5rem 5rem 5rem;
      border: 1px solid $plava;
 }
 div#modal-multi-1___BV_modal_body_ {

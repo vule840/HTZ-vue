@@ -2,8 +2,8 @@
 <template>
   <div id="prijava">
     <b-col class="mx-auto" lg="8" >
-    <h2>Korisnički podaci</h2>
-           <b-form @submit="onSubmit" @reset="onReset" v-if="show">
+    <h2>Dobro došli Adria camping!</h2>
+         <!--   <b-form @submit="onSubmit" @reset="onReset" v-if="show">
         <b-form-group
           id="input-group-1"
           label="Email address:"
@@ -26,7 +26,7 @@
             required
             placeholder="Enter name"
           ></b-form-input>
-        </b-form-group>
+        </b-form-group> -->
 
         <!-- <b-form-group id="input-group-3" label="Food:" label-for="input-3">
           <b-form-select
@@ -58,7 +58,7 @@
 
 <script>
   export default {
-    name: 'Prijava',
+    name: 'PrijavaLoginUspjeh',
   props: {
     msg: String
   },
