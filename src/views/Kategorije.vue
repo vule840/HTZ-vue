@@ -99,7 +99,10 @@
 <path d="M13.5252 12.053L11.2287 14.4347C11.0181 14.6541 11.0181 15.0197 11.2287 15.2495C11.339 15.3644 11.4794 15.4166 11.6198 15.4166C11.7602 15.4166 11.9006 15.3644 12.0109 15.2495L15.6311 11.4785L12.0109 7.70749C11.8003 7.48813 11.4493 7.48813 11.2287 7.70749C11.0181 7.92686 11.0181 8.29247 11.2287 8.52228L13.5252 10.9144H1.55155C1.2507 10.9144 1 11.1756 1 11.4889C1 11.8023 1.2507 12.0635 1.55155 12.0635H13.5252V12.053Z" fill="#00386C" stroke="#00386C"/>
 </svg>
         
+        <svg class="home_ikone"><use xlink:href="../assets/sprite-sheet.svg#htz-home-logo"></use></svg>
         
+
+        <GumbSvg/>
       </b-container>
 </div>
   </div>
@@ -109,11 +112,13 @@
 <script>
 // @ is an alias to /src
 import Carusel from '@/components/Carusel.vue'
+import GumbSvg from '@/assets/prijava_gumb.svg';
 
 export default {
   name: 'home',
   components: {
-    Carusel
+    Carusel,
+    GumbSvg
   },
     data() {
       return {

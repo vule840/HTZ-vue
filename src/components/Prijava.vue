@@ -44,7 +44,8 @@
           </b-form-checkbox-group>
         </b-form-group> -->
 
-        <b-button class="crveni-gumb w-100" type="submit" variant="primary">Prijava</b-button>
+        <b-button  v-b-modal.modal-multi-2 class="crveni-gumb w-100" type="submit" variant="primary">Prijava</b-button>
+            <b-button v-b-modal.modal-multi-2>Open Second Modal</b-button>
        <!--  <b-button type="reset" variant="danger">Reset</b-button> -->
       </b-form>
       <p>Niste registrirani? Da biste kreirali ponudu u akciji “Tjedan odmora vrijedan” prvo se morate registrirati ovdje.</p>

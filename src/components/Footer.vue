@@ -35,7 +35,7 @@
           <b-col class="text-left footer__mreze" sm="6" lg="3">
              <h5>DRUŠTVENE MREŽE</h5
             >
-            <p><a href="#">Facebook</a> </p>
+            <p><a href="#"><FbLogoSvg/>  Facebook</a> </p>
             <p><a href="#">YouTube</a> </p>
             <p><a href="#">Twitter</a> </p>
             <p><a href="#">Instagram</a> </p> 
@@ -56,11 +56,18 @@
 </template>
 
 <script>
+import FbLogoSvg from '@/assets/fb_logo.svg';
+
+
 export default {
   name: 'Footer',
+  components: {
+    FbLogoSvg
+  },
   props: {
     msg: String
-  }
+  },
+
 }
 </script>
 
