@@ -228,6 +228,43 @@ FOOTER
 //   "danger": #ff4136
 // );
 
+/*********************************
 
+MODAL
+
+*********************************/
+/* Makni modal header i footer */
+
+.modal-header {
+	justify-content: center;
+	.modal-title{
+		color:$plava;
+	font-size: 3rem;
+	text-align:center;
+	padding-bottom: 1rem;
+	}
+	// display: none;
+	
+} 
+
+.modal-footer{
+	display: none;
+}
+div#modal-multi-1___BV_modal_content_ {
+    padding: 3rem 7rem 7rem 7rem;
+     border: 1px solid $plava;
+}
+div#modal-multi-1___BV_modal_body_ {
+	
+    border: 1px solid $plava;
+}
+
+.modal-header .close{
+	position: absolute;
+    right: 0;
+    top: 0;
+    padding: 1rem;
+    margin: 0;
+}
 
 

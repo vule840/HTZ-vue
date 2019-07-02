@@ -33,21 +33,23 @@
  -->
 
 
+   <!-- ******** MODALS ************ -->
+
          <b-button class="prijava" v-b-modal.modal-multi-1>PRIJAVA</b-button>
 
-  <b-modal id="modal-multi-1" size="lg" title="First Modal" ok-only no-stacking>
-    <p class="my-2">First Modal</p>
+  <b-modal title="Prijava" id="modal-multi-1" size="lg" ok-only no-stacking>
+    <Prijava/>
     <b-button v-b-modal.modal-multi-2>Open Second Modal</b-button>
 
   </b-modal>
 
-  <b-modal  id="modal-multi-2" title="Second Modal" ok-only no-stacking>
+  <b-modal size="xl" id="modal-multi-2" title="Second Modal" ok-only no-stacking>
     <p class="my-2">Second Modal</p>
     <b-button v-b-modal.modal-multi-3 size="sm">Open Third Modal</b-button>
      <b-button v-b-modal.modal-multi-2>Open Second Modal</b-button>
   </b-modal>
 
-  <b-modal id="modal-multi-3" size="sm" title="Third Modal" ok-only>
+  <b-modal size="xl" id="modal-multi-3" title="Third Modal" ok-only>
     <p class="my-1">Third Modal <b-button @click="hide()">Hide Modal</b-button></p>
   </b-modal>
 
@@ -72,10 +74,16 @@
 </template>
 
 <script>
+
+import Prijava from '@/components/Prijava.vue'
+
 export default {
   name: 'Header',
   props: {
     msg: String
+  },
+  components: {
+    Prijava
   }
 }
 </script>
