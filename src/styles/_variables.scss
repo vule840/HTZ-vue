@@ -1,0 +1,233 @@
+// custom.scss
+@import 'node_modules/bootstrap/scss/bootstrap';
+@import 'node_modules/bootstrap-vue/src/index.scss';
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=latin-ext');
+
+
+// Roboto font
+$roboto: 'Roboto', sans-serif;;
+
+// Boje
+$plava: #00386C;
+$crvena: #CF1F25;
+
+
+	
+body{
+	
+	// h3{
+	// 	color: white;
+	// }
+	font-family: $roboto;
+}
+
+
+/*********************************
+
+HEADER
+
+*********************************/
+
+
+#header{
+	background: $plava;
+	
+}
+
+/*********************************
+
+NAVIGACIJA
+
+*********************************/
+
+#navigacija{
+	padding: 0.3rem 0;
+	background: $plava;
+	text-transform: uppercase;
+	.navbar-nav{
+		
+		
+	}
+	a{
+		color: #fff;
+		border-right: 1px solid rgba(255, 255, 255, 0.3);
+		padding: 0.3rem 1rem;
+	}
+	
+		.nav-item{
+			padding: 0.5rem;
+			// padding: 1rem 0;
+			border-right: 1px solid rgba(255, 255, 255, 0.3);
+			&:after {
+				/*border-right: 1px solid #ccc;*/
+			}
+		}
+	.prijava{
+		background: #fff;
+		color: $plava;
+		border-radius: 0;
+		// border: 0;
+		// padding: 1.3rem;
+		padding: 0.7rem;
+    margin: -0.3rem;
+    border-radius: 0;
+	}
+}
+/*********************************
+
+CARUSEL
+*********************************/
+.carousel-indicators > li {
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+}
+
+/*********************************
+
+CONTENT
+*********************************/
+
+.content{
+	padding: 5rem 0;
+	font-size: 1.5rem;
+	h2{
+		color: $plava;
+		font-size: 3rem;
+		padding-bottom: 3rem;
+
+	}
+	strong{
+		color: $plava;
+	}
+}
+
+/*********************************
+
+KATEGORIJE
+
+*********************************/
+
+#kategorije{
+	h5{
+		text-transform: uppercase;
+		font-weight: bold;
+		font-size: 1rem;
+		color: $plava;
+		// .smjestaj{
+		// 	border-bottom: 4px solid red;
+		// }
+		padding-bottom: 1rem;
+		&.smjestaj{
+		        border-bottom: 13px solid #CB2422;
+		    }
+		   &.hrana{
+		        border-bottom: 13px solid #D26B13;
+		    }
+		    &.kultura{
+		        border-bottom: 13px solid #FAC401;
+		    }
+		    &.aktivni{
+		        border-bottom: 13px solid #AFC624;
+		    }
+		     &.priroda{
+		        border-bottom: 13px solid #829427;
+		    }
+		     &.zdravlje{
+		        border-bottom: 13px solid #43B17A;
+		    }
+		     &.nautika{
+		        border-bottom: 13px solid #419CD6;
+		    }
+		     &.izleti{
+		        border-bottom: 13px solid #283476;
+		    }
+		     &.prijevoz{
+		        border-bottom: 13px solid #A8529A;
+		    }
+		     &.paket{
+		        border-bottom: 13px solid #E84490;
+		    }
+		     &.ostala{
+		        border-bottom: 13px solid #DCDCDC;
+		    }
+		
+	}
+
+}
+
+/*********************************
+
+FOOTER
+
+*********************************/
+
+
+
+
+	// #footer{
+	// 	background: $plava;
+	// 	padding: 3rem 0;
+	// 	h5{
+	// 		color: white;
+	// 	}
+	// }
+#footer {
+	padding: 3rem 0;
+	background: $plava;
+	color:#fff;
+	font-size: 0.9rem;
+		.footer__mreze {
+			p{
+				margin-bottom: 0;
+			} 
+			
+		}
+	a{
+		color: #fff;
+		text-decoration: none;
+		&:hover{
+			color: #fff;
+		text-decoration: none;
+		}
+	}
+	h5{
+		font-size: 0.9rem;
+		color: #fff;
+		text-transform: uppercase;
+		padding-bottom: 1.5rem;
+		font-weight: bold;
+	}
+}
+
+.crveni-gumb{
+	background: $crvena;
+	text-transform: uppercase;
+	border-radius: 0;
+	padding: 0.3rem 5rem;
+	font-weight: bold;
+	border: 0;
+}
+
+.carousel-caption{
+	top: 50%;
+}
+
+/*SVG*/
+.htz_logo{
+	width: 200px;
+	height: 100px;
+}
+.tanjur{
+	width: 50px;
+}
+
+// $theme-colors: (
+//   "plava": #0074d9,
+//   "danger": #ff4136
+// );
+
+
+
+
