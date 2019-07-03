@@ -45,15 +45,21 @@ NAVIGACIJA
 	padding: 0.3rem 0;
 	background: $plava;
 	text-transform: uppercase;
+	.navbar-brand{
+		position: absolute;
+		top:-5px;
+		z-index: 1;
+		    border-right: 0;
+	}
 	.navbar-nav{
-		
-		
+		        margin-left: 7rem;
+			a{
+			color: #fff;
+			border-right: 1px solid rgba(255, 255, 255, 0.3);
+			padding: 0.3rem 1rem;
+		}
 	}
-	a{
-		color: #fff;
-		border-right: 1px solid rgba(255, 255, 255, 0.3);
-		padding: 0.3rem 1rem;
-	}
+	
 	
 		.nav-item{
 			padding: 0.5rem;
@@ -119,6 +125,7 @@ KATEGORIJE
 		// 	border-bottom: 4px solid red;
 		// }
 		padding-bottom: 1rem;
+		padding-top: 0.5rem;
 		&.smjestaj{
 		        border-bottom: 13px solid #CB2422;
 		    }
@@ -154,7 +161,15 @@ KATEGORIJE
 		    }
 		
 	}
-
+	.content{
+		.row{
+			padding-top: 2rem;
+		}
+	}
+	p{
+		padding-bottom: 2rem;
+	}
+	
 }
 
 /*********************************
@@ -179,6 +194,9 @@ FOOTER
 	color:#fff;
 	font-size: 0.9rem;
 		.footer__mreze {
+			svg{
+				margin-right: 5px;
+			}
 			p{
 				margin-bottom: 0;
 			} 
@@ -236,7 +254,7 @@ MODAL
 /* Makni modal header i footer */
 
 
-#prijava{
+#prijava, #prijavaLogin{
 	h2{
 		text-align: center;
 		font-size: 1.5rem;
@@ -260,6 +278,7 @@ MODAL
 .modal-footer{
 	display: none;
 }
+/* Prvi modal */
 div#modal-multi-1___BV_modal_content_ {
     padding: 2rem 5rem 5rem 5rem;
      border: 1px solid $plava;
@@ -268,6 +287,25 @@ div#modal-multi-1___BV_modal_body_ {
 	
     border: 1px solid $plava;
 }
+/* Drugi modal */
+div#modal-multi-2___BV_modal_content_ {
+    padding: 2rem 5rem 5rem 5rem;
+     border: 1px solid $plava;
+}
+div#modal-multi-2___BV_modal_body_ {
+	
+    border: 1px solid $plava;
+}
+/* Treci modal */
+div#modal-multi-3___BV_modal_content_ {
+    padding: 2rem 5rem 5rem 5rem;
+     border: 1px solid $plava;
+}
+div#modal-multi-3___BV_modal_body_ {
+	
+    border: 1px solid $plava;
+}
+
 
 .modal-header .close{
 	position: absolute;

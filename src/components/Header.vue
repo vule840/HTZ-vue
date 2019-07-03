@@ -5,9 +5,9 @@
   <div id="header">
     <b-container>
     <b-navbar id="navigacija" toggleable="lg" type="dark" variant="transparent">
-          <b-navbar-brand href="#">NavBar</b-navbar-brand>
+          <b-navbar-brand href="#"><Logo/></b-navbar-brand>
 
-          <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+          <b-navbar-toggle class="ml-auto" target="nav-collapse"></b-navbar-toggle>
 
           <b-collapse id="nav-collapse" is-nav>
             <b-navbar-nav >
@@ -35,24 +35,41 @@
 
    <!-- ******** MODALS ************ -->
 
-         <b-button class="prijava" v-b-modal.modal-multi-1>PRIJAVA</b-button>
+         <b-button class="prijava px-4" v-b-modal.modal-multi-1><PrijavaSvg/> PRIJAVA</b-button>
 
   <b-modal title="Prijava" id="modal-multi-1" size="lg" ok-only no-stacking>
+
     <Prijava/>
+
     <b-button v-b-modal.modal-multi-2>Open Second Modal</b-button>
 
   </b-modal>
 
-  <b-modal size="xl" id="modal-multi-2" title="Second Modal" ok-only no-stacking>
-    <p class="my-2">Second Modal</p>
+ <!-- 2 -->
+
+  <b-modal size="xl" id="modal-multi-2" title="Dobro došli Adria camping!" ok-only no-stacking>
+
+    <PrijavaLoginUspjeh/>
+
+
     <b-button v-b-modal.modal-multi-3 size="sm">Open Third Modal</b-button>
-     <b-button v-b-modal.modal-multi-2>Open Second Modal</b-button>
+     <b-button v-b-modal.modal-multi-2>Open Third Modal</b-button>
   </b-modal>
 
-  <b-modal size="xl" id="modal-multi-3" title="Third Modal" ok-only>
-    <p class="my-1">Third Modal <b-button @click="hide()">Hide Modal</b-button></p>
+   <!-- 3 -->
+
+  <b-modal ok-only no-stacking size="xl" id="modal-multi-3" title="Kontakt podaci" ok-only>
+    
+    <PrijavaKontakt/> <b-button @click="hide()">Hide Modal</b-button>
+    <b-button v-b-modal.modal-multi-4>Open Fourth Modal</b-button>
   </b-modal>
 
+   <!-- 4 -->
+
+  <b-modal size="xl" id="modal-multi-4" title="Kontakt podaci" ok-only>
+    
+    <PrijavaKontakt/> <b-button @click="hide()">Hide Modal</b-button>
+  </b-modal>
 
             
             </b-navbar-nav>
@@ -76,6 +93,10 @@
 <script>
 
 import Prijava from '@/components/Prijava.vue'
+import PrijavaLoginUspjeh from '@/components/PrijavaLoginUspjeh.vue'
+import PrijavaSvg from '@/assets/prijava_gumb.svg';
+import PrijavaKontakt from '@/components/PrijavaKontakt.vue'
+import Logo from '@/assets/logo.svg';
 
 export default {
   name: 'Header',
@@ -83,7 +104,11 @@ export default {
     msg: String
   },
   components: {
-    Prijava
+    Prijava,
+    PrijavaSvg,
+    Logo,
+    PrijavaLoginUspjeh,
+    PrijavaKontakt
   }
 }
 </script>

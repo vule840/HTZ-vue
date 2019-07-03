@@ -1,8 +1,8 @@
 
 <template>
-  <div id="PrijavaLogin">
+  <div id="PrijavaKontakt">
     <b-col class="mx-auto" lg="8" >
-      <p class="text-center">Odabir opcija</p>
+      <p class="text-center">Uredi kontakt podatke</p>
     
          <!--   <b-form @submit="onSubmit" @reset="onReset" v-if="show">
         <b-form-group
@@ -59,7 +59,7 @@
 
 <script>
   export default {
-    name: 'PrijavaLoginUspjeh',
+    name: 'PrijavaKontakt',
   props: {
     msg: String
   },

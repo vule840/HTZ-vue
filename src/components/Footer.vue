@@ -11,7 +11,7 @@
           <!-- 1 -->
           <b-col class="text-left" sm="6" lg="3">
               <h5>KONTAKTI </h5>
-          <img class="pb-2" src="https://via.placeholder.com/62x40">
+          <img width="62" class="pb-2" src="@/assets/htz_logo.png">
           <p>Hrvatska turistička zajednica <br>
           Iblerov trg 10/IV <br>
           10000 Zagreb</p>
@@ -20,8 +20,8 @@
           <p><a href="mailto:info@htz.hr">info@htz.hr</a></p>
           </b-col>
           <!-- 2 -->
-          <b-col class="text-left" sm="6" lg="3">
-              <img class="pt-5 pb-2 " src="https://via.placeholder.com/167x40">
+          <b-col class="text-left pb-sm-3" sm="6" lg="3">
+              <img width="167" class="pt-5 pb-2 " src="@/assets/hrv_logo.png">
           
                     <p>Ministarstvo turizma
           Prisavlje 14
@@ -35,10 +35,10 @@
           <b-col class="text-left footer__mreze" sm="6" lg="3">
              <h5>DRUŠTVENE MREŽE</h5
             >
-            <p><a href="#"><FbLogoSvg/>  Facebook</a> </p>
-            <p><a href="#">YouTube</a> </p>
-            <p><a href="#">Twitter</a> </p>
-            <p><a href="#">Instagram</a> </p> 
+            <p><a href="#"><FbLogoSvg/> Facebook</a> </p>
+            <p><a href="#"><YtLogoSvg/> YouTube</a> </p>
+            <p><a href="#"><TwLogoSvg/> Twitter</a> </p>
+            <p><a href="#"><InstLogoSvg/> Instagram</a> </p> 
 
           </b-col>
           <!-- 4 -->
@@ -57,12 +57,17 @@
 
 <script>
 import FbLogoSvg from '@/assets/fb_logo.svg';
-
+import InstLogoSvg from '@/assets/ins_logo.svg';
+import TwLogoSvg from '@/assets/tw_logo.svg';
+import YtLogoSvg from '@/assets/yt_logo.svg';
 
 export default {
   name: 'Footer',
   components: {
-    FbLogoSvg
+    FbLogoSvg,
+    InstLogoSvg,
+    TwLogoSvg,
+    YtLogoSvg
   },
   props: {
     msg: String

@@ -1,0 +1,11 @@
+<svg width="83" height="62" viewBox="0 0 83 67" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="16.0231" cy="50.052" r="12.5" transform="rotate(-9.02665 16.0231 50.052)" stroke="#003869" stroke-width="3"/>
+<circle cx="58.0231" cy="37.052" r="12.5" transform="rotate(-9.02665 58.0231 37.052)" stroke="#003869" stroke-width="3"/>
+<line x1="33.6293" y1="16.3091" x2="23.5947" y2="29.9165" stroke="#003869" stroke-width="10" stroke-linecap="round"/>
+<line x1="22.5171" y1="30.7413" x2="34.8607" y2="35.5536" stroke="#003869" stroke-width="7" stroke-linecap="round"/>
+<line x1="35.314" y1="15.0514" x2="43.2836" y2="20.8672" stroke="#003869" stroke-width="5" stroke-linecap="round"/>
+<line x1="43.6149" y1="20.8314" x2="53.4104" y2="18.8195" stroke="#003869" stroke-width="5" stroke-linecap="round"/>
+<line x1="34.9276" y1="36.5344" x2="38.8268" y2="49.0404" stroke="#003869" stroke-width="7" stroke-linecap="round"/>
+<circle cx="41.7778" cy="6.91627" r="5.5" transform="rotate(-11.6063 41.7778 6.91627)" fill="#003869"/>
+<path d="M35.5 59.5L26 65.5287H82.5V42L69 51L53.5 57.0287L35.5 59.5Z" fill="#003869"/>
+</svg>
