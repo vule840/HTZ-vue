@@ -38,10 +38,10 @@
           class="d-block img-fluid w-100"
           width="1024"
           height="480"
-          src="@/assets/slider1-image.jpg"
+          src="@/assets/slider2-image.jpg"
           alt="image slot"
         >
-        <BuditeSvg/><br>
+        
         <b-button class="crveni-gumb">Sudjelujte</b-button>
       </b-carousel-slide>
 
@@ -58,12 +58,11 @@
 </template>
 
 <script>
-  import BuditeSvg from '@/assets/budite.svg';
 
   export default {
-  name: 'Carusel',
+  name: 'CaruselSudjelovati',
   components: {
-    BuditeSvg
+    
    
   },
   props: {

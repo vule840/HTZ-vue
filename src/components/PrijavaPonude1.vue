@@ -1,43 +1,28 @@
 
 <template>
-  <div id="PrijavaLogin">
-    <b-col class="mx-auto" lg="8" >
-      <p class="text-center">Odabir opcija</p>
-    
-         
+  <div id="PrijavaPonude">
+    Prijava Ponude
 
-        <b-button v-b-modal.modal-multi-3 class="plavi-gumb w-100 mb-3">PONUDE</b-button><br>
-        <b-button v-b-modal.modal-multi-4 class="plavi-gumb w-100 mb-3">PODACI O SUBJEKTU</b-button><br>
-        <b-button v-b-modal.modal-multi-5 size="sm" class="plavi-gumb w-100 mb-3">KONTAKT PODACI</b-button>
-       <!--  <b-button type="reset" variant="danger">Reset</b-button> -->
-     
-      <!-- <b-button v-b-modal.modal-multi-3 size="sm">Open Third Modal</b-button> -->
-
-
-              
-    </b-col>
   </div>
 </template>
 
 <script>
-import Prijava from '@/components/Prijava.vue'
+
+/*import Prijava from '@/components/Prijava.vue'
 import PrijavaLoginUspjeh from '@/components/PrijavaLoginUspjeh.vue'
 import PrijavaSvg from '@/assets/prijava_gumb.svg';
 import PrijavaKontakt from '@/components/PrijavaKontakt.vue'
-import Logo from '@/assets/logo.svg';
+import Logo from '@/assets/logo.svg';*/
 
   
   export default {
-    name: 'PrijavaLoginUspjeh',
+    name: 'PrijavaPonude',
   props: {
     msg: String
   },
   components: {
-    Prijava,
-    PrijavaSvg,
-    Logo,
-    PrijavaLoginUspjeh,
-    PrijavaKontakt
+   
+   
   },
 
     data() {

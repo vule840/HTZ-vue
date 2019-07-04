@@ -12,7 +12,9 @@ $roboto: 'Roboto', sans-serif;;
 $plava: #00386C;
 $crvena: #CF1F25;
 
-
+strong{
+	color: $plava;
+}
 	
 body{
 	
@@ -162,9 +164,9 @@ KATEGORIJE
 		
 	}
 	.content{
-		.row{
+		/* .row{
 			padding-top: 2rem;
-		}
+		} */
 	}
 	p{
 		padding-bottom: 2rem;
@@ -221,6 +223,14 @@ FOOTER
 
 .crveni-gumb{
 	background: $crvena;
+	text-transform: uppercase;
+	border-radius: 0;
+	padding: 0.3rem 5rem;
+	font-weight: bold;
+	border: 0;
+}
+.plavi-gumb{
+	background: $plava;
 	text-transform: uppercase;
 	border-radius: 0;
 	padding: 0.3rem 5rem;
@@ -305,6 +315,29 @@ div#modal-multi-3___BV_modal_body_ {
 	
     border: 1px solid $plava;
 }
+
+/* Cetvrti modal */
+div#modal-multi-4___BV_modal_content_ {
+    padding: 2rem 5rem 5rem 5rem;
+     border: 1px solid $plava;
+}
+div#modal-multi-4___BV_modal_body_ {
+	
+    border: 1px solid $plava;
+}
+/* Peti modal */
+div#modal-multi-5___BV_modal_content_ {
+    padding: 2rem 5rem 5rem 5rem;
+     border: 1px solid $plava;
+     .modal-footer{
+     	display: block;
+     }
+}
+div#modal-multi-5___BV_modal_body_ {
+	
+    border: 1px solid $plava;
+}
+
 
 
 .modal-header .close{

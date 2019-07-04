@@ -1,7 +1,7 @@
 <template>
   <div id="kategorije">
     <div>
-    	<Carusel/>
+    	<CaruselKategorije/>
       <b-container class="content">
         <h2>Kategorije</h2>
          <p>Klinkite na pojedinu kategoriju da biste otkrili pripadajuće podkategorije</p>
@@ -105,7 +105,7 @@
 
 <script>
 // @ is an alias to /src
-import Carusel from '@/components/Carusel.vue'
+import CaruselKategorije from '@/components/CaruselKategorije.vue'
 import GumbSvg from '@/assets/prijava_gumb.svg';
 import SmjestajSvg from '@/assets/smjestaj.svg';
 import HranaSvg from '@/assets/hrana.svg';
@@ -121,7 +121,7 @@ import OstalaSvg from '@/assets/ostala.svg';
 export default {
   name: 'home',
   components: {
-    Carusel,
+    CaruselKategorije,
     GumbSvg,
     SmjestajSvg,
     HranaSvg,

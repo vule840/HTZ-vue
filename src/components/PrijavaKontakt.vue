@@ -3,8 +3,11 @@
   <div id="PrijavaKontakt">
     <b-col class="mx-auto" lg="8" >
       <p class="text-center">Uredi kontakt podatke</p>
+
+
+      
     
-         <!--   <b-form @submit="onSubmit" @reset="onReset" v-if="show">
+          <b-form @submit="onSubmit" @reset="onReset" v-if="show">
         <b-form-group
           id="input-group-1"
           label="Email address:"
@@ -20,7 +23,7 @@
           ></b-form-input>
         </b-form-group>
 
-        <b-form-group id="input-group-2" label="Your Name:" label-for="input-2">
+       <!--   <b-form-group id="input-group-2" label="Your Name:" label-for="input-2">
           <b-form-input
             id="input-2"
             v-model="form.name"
@@ -72,8 +75,8 @@
           // food: null,
           // checked: []
         },
-        foods: [{ text: 'Select One', value: null }, 'Carrots', 'Beans', 'Tomatoes', 'Corn'],
-        show: true
+        // foods: [{ text: 'Select One', value: null }, 'Carrots', 'Beans', 'Tomatoes', 'Corn'],
+        // show: true
       }
     },
     methods: {

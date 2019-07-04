@@ -1,7 +1,7 @@
 <template>
   <div class="about">
     <div>
-    	<Carusel/>
+    	<CaruselPitanja/>
         <b-container class="content">
         <h2>Česta pitanja</h2>
         <b-row>
@@ -29,12 +29,12 @@
 
 <script>
 // @ is an alias to /src
-import Carusel from '@/components/Carusel.vue'
+import CaruselPitanja from '@/components/CaruselPitanja.vue'
 
 export default {
   name: 'home',
   components: {
-    Carusel
+    CaruselPitanja
   },
     data() {
       return {

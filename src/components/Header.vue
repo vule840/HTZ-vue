@@ -41,7 +41,7 @@
 
     <Prijava/>
 
-    <b-button v-b-modal.modal-multi-2>Open Second Modal</b-button>
+    <!-- <b-button v-b-modal.modal-multi-2>Open Second Modal</b-button> -->
 
   </b-modal>
 
@@ -52,24 +52,68 @@
     <PrijavaLoginUspjeh/>
 
 
-    <b-button v-b-modal.modal-multi-3 size="sm">Open Third Modal</b-button>
-     <b-button v-b-modal.modal-multi-2>Open Third Modal</b-button>
+    
+     <!-- <b-button v-b-modal.modal-multi-2>Open Third Modal</b-button> -->
   </b-modal>
 
    <!-- 3 -->
 
-  <b-modal ok-only no-stacking size="xl" id="modal-multi-3" title="Kontakt podaci" ok-only>
-    
-    <PrijavaKontakt/> <b-button @click="hide()">Hide Modal</b-button>
-    <b-button v-b-modal.modal-multi-4>Open Fourth Modal</b-button>
-  </b-modal>
+ 
 
    <!-- 4 -->
 
-  <b-modal size="xl" id="modal-multi-4" title="Kontakt podaci" ok-only>
+  <!-- <b-modal size="xl" id="modal-multi-4" title="Kontakt podaci" ok-only>
     
     <PrijavaKontakt/> <b-button @click="hide()">Hide Modal</b-button>
-  </b-modal>
+  </b-modal> -->
+
+
+
+  <!-- Modal Ponude -->
+
+       <b-modal ok-only no-stacking size="xl" id="modal-multi-3" title="Ponude" ok-only>
+    
+        <PrijavaPonude1/> <!-- <b-button @click="hide()">Hide Modal</b-button> -->
+        <!-- <b-button v-b-modal.modal-multi-3>Open Fourth Modal</b-button> -->
+      </b-modal>
+
+<!-- Modal Podaci o subjektu -->
+    <b-modal ok-only no-stacking size="xl" id="modal-multi-4" title="Podaci o subjektu" ok-only>
+    
+        <PrijavaPodaci2/> <!-- <b-button @click="hide()">Hide Modal</b-button> -->
+       <!--  <b-button v-b-modal.modal-multi-4>Open Fourth Modal</b-button> -->
+      </b-modal>
+
+<!-- Modal Kontakt podaci -->
+
+      <b-modal ok-only no-stacking size="xl" id="modal-multi-5" title="Kontakt podaci" ok-only>
+    
+        <PrijavaKontaktPodaci3/> <!-- <b-button @click="hide()">Hide Modal</b-button> -->
+        <!-- <b-button v-b-modal.modal-multi-5>Open Fourth Modal</b-button> -->
+        
+
+          <template slot="modal-footer" slot-scope="{ ok, cancel, hide }">
+            <b-row>
+          <b-col class="pr-0" lg="6" >
+              
+              <b-button block size="sm" variant="success" @click="ok()">
+              Povratak
+            </b-button>
+
+          </b-col>
+           <b-col class="pl-0" lg="6" >
+              
+               <b-button block size="sm" variant="success" @click="ok()">
+              Izmjeni
+            </b-button>
+
+          </b-col>
+            </b-row>
+
+          </template>
+
+
+      </b-modal>
 
             
             </b-navbar-nav>
@@ -94,6 +138,9 @@
 
 import Prijava from '@/components/Prijava.vue'
 import PrijavaLoginUspjeh from '@/components/PrijavaLoginUspjeh.vue'
+import PrijavaPonude1 from '@/components/PrijavaPonude1.vue'
+import PrijavaPodaci2 from '@/components/PrijavaPodaci2.vue'
+import PrijavaKontaktPodaci3 from '@/components/PrijavaKontaktPodaci3.vue'
 import PrijavaSvg from '@/assets/prijava_gumb.svg';
 import PrijavaKontakt from '@/components/PrijavaKontakt.vue'
 import Logo from '@/assets/logo.svg';
@@ -108,7 +155,10 @@ export default {
     PrijavaSvg,
     Logo,
     PrijavaLoginUspjeh,
-    PrijavaKontakt
+    PrijavaKontakt,
+    PrijavaPodaci2,
+    PrijavaPonude1,
+    PrijavaKontaktPodaci3
   }
 }
 </script>

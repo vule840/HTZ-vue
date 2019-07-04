@@ -1,7 +1,7 @@
 <template>
   <div class="about">
     <div>
-    	<Carusel/>
+    	<CaruselSudjelovati/>
       <b-container class="content">
         <h2>Kako sudjelovati?</h2>
         <b-row>
@@ -36,12 +36,12 @@
 
 <script>
 // @ is an alias to /src
-import Carusel from '@/components/Carusel.vue'
+import CaruselSudjelovati from '@/components/CaruselSudjelovati.vue'
 
 export default {
   name: 'home',
   components: {
-    Carusel
+    CaruselSudjelovati
   },
     data() {
       return {
