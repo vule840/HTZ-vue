@@ -96,7 +96,7 @@
             <b-row>
           <b-col class="pr-0" lg="6" >
               
-              <b-button block size="sm" variant="success" @click="ok()">
+              <b-button v-b-modal.modal-multi-1 block size="sm" variant="success" @click="ok()">
               Povratak
             </b-button>
 
