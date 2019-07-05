@@ -1,8 +1,8 @@
 
 <template>
-  <div id="PrijavaPodaci">
+  <div id="PrijavaPodaciPoslovna">
  
-    <h5 class="text-center">Uredi podatke o subjektu</h5>
+    <h5 class="text-center">Dodavanje poslovne jedinice</h5>
     <b-col  lg="6" >
      <!--  <p class="text-center">Odabir opcija</p> -->
      
@@ -10,14 +10,14 @@
       <b-form @submit="onSubmit" @reset="onReset" v-if="show">
         <b-form-group
           id="input-group-1"
-          label="Naziv poslovnog subjekta"
+          label="Naziv poslovne jedinice"
           label-for="input-1"
           description=""
           placeholder="Adria camping"
         >
           <b-form-input
             id="input-1"
-            v-model="form.email"
+            
             type="text"
             required
             placeholder="Adria camping"
@@ -25,68 +25,91 @@
         </b-form-group>
 
     <!-- OIB -->
-        <b-form-group id="input-group-2" label="OIB" label-for="input-2">
+        <b-form-group id="input-group-2" label="Adresa poslovne jedinice" label-for="input-2">
           <b-form-input
             id="input-2"
-            v-model="form.oib"
+            type="text"
             required
-            placeholder="35487985498"
+            placeholder="Južna obala 3"
           ></b-form-input>
         </b-form-group>
     <!-- Adresa -->
         
-         <b-form-group id="input-group-3" label="Adresa poslovnog subjekta" label-for="input-3">
+         <b-form-group id="input-group-3" label="Mjesto" label-for="input-3">
           <b-form-input
             id="input-3"
-          
+            type="text"
             required
-            placeholder="Lošinjska 2"
+            placeholder="Lošinj"
           ></b-form-input>
         </b-form-group>
 
         <!-- Mjesto -->
 
-         <b-form-group id="input-group-4" label="Mjesto" label-for="input-4">
+         <b-form-group id="input-group-4" label="Telefon" label-for="input-4">
           <b-form-input
             id="input-4"
-          
-            required
-            placeholder="Cres"
-          ></b-form-input>
-        </b-form-group>
-
-        <!-- Telefon -->
-
-         <b-form-group id="input-group-5" label="Telefon" label-for="input-5">
-          <b-form-input
-            id="input-5"
             type="number"
             required
             placeholder="052 200 351"
           ></b-form-input>
         </b-form-group>
 
-       <!-- E-mail -->
 
-         <b-form-group id="input-group-6" label="E-mail" label-for="input-6">
-          <b-form-input
-            id="input-6"
-            type="email"
-            required
-            placeholder="info@adriacamping.hr"
-          ></b-form-input>
-        </b-form-group>
-    
-    <!-- Web adresa-->
+  <!-- Email -->
 
-         <b-form-group id="input-group-7" label="Web adresa" label-for="input-7">
-          <b-form-input
-            id="input-7"
-            type="email"
-            required
-            placeholder="www.adriacamping.hr"
-          ></b-form-input>
-        </b-form-group>
+        <b-form-group id="input-group-5" label="E-mail" label-for="input-5">
+         <b-form-input
+           id="input-5"
+           type="email"
+           required
+           placeholder="info@minotaur.hr"
+         ></b-form-input>
+                </b-form-group>
+
+  <!-- Web adresa -->
+
+        <b-form-group id="input-group-7" label="Web adresa" label-for="input-7">
+         <b-form-input
+           id="input-7"
+           type="email"
+           required
+           placeholder="www.hotel-minotaur.hr"
+         ></b-form-input>
+                </b-form-group>         
+
+        <!-- Telefon -->
+
+        <!--  <b-form-group id="input-group-5" label="Telefon" label-for="input-5">
+         <b-form-input
+           id="input-5"
+           type="number"
+           required
+           placeholder="052 200 351"
+         ></b-form-input>
+                </b-form-group>
+        
+               E-mail
+        
+        <b-form-group id="input-group-6" label="E-mail" label-for="input-6">
+         <b-form-input
+           id="input-6"
+           type="email"
+           required
+           placeholder="info@adriacamping.hr"
+         ></b-form-input>
+                </b-form-group>
+            
+            Web adresa
+        
+        <b-form-group id="input-group-7" label="Web adresa" label-for="input-7">
+         <b-form-input
+           id="input-7"
+           type="email"
+           required
+           placeholder="www.adriacamping.hr"
+         ></b-form-input>
+                </b-form-group> -->
 
 
 
@@ -99,13 +122,13 @@
               
     </b-col>
 
-    <hr class="my-4"> 
-
+    <!-- <hr class="my-4"> 
+    
     <b-col  lg="6" >
       <h5>Poslovne jedinice</h5>
       <p>Nema unešenih poslovnih jedinica.</p>
-      <button v-b-modal.modal-multi-8 class="btn plavi-gumb-outline w-100 mb-5">Dodaj poslovnu jedinicu</button>
-    </b-col>
+      <button class="btn plavi-gumb-outline w-100 mb-5">Dodaj poslovnu jedinicu</button>
+    </b-col> -->
 
   </div>
 </template>
@@ -120,7 +143,7 @@ import Logo from '@/assets/logo.svg';*/
 
   
   export default {
-    name: 'PrijavaPodaci',
+    name: 'PrijavaPodaciPoslovna',
   props: {
     msg: String
   },

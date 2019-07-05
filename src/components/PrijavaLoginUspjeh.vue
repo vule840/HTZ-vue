@@ -1,7 +1,7 @@
 
 <template>
   <div id="PrijavaLogin">
-    <b-col class="mx-auto" lg="8" >
+     <b-col class="mx-auto" lg="8" >
       <p class="text-center">Odabir opcija</p>
     
          

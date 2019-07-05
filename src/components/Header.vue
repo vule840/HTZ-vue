@@ -77,12 +77,34 @@
         <!-- <b-button v-b-modal.modal-multi-3>Open Fourth Modal</b-button> -->
       </b-modal>
 
+
 <!-- Modal Podaci o subjektu -->
     <b-modal ok-only no-stacking size="xl" id="modal-multi-4" title="Podaci o subjektu" ok-only>
     
         <PrijavaPodaci2/> <!-- <b-button @click="hide()">Hide Modal</b-button> -->
        <!--  <b-button v-b-modal.modal-multi-4>Open Fourth Modal</b-button> -->
+        <template slot="modal-footer" slot-scope="{ ok, cancel, hide }">
+            <b-row>
+              <b-col class="pr-0" sm="6" lg="6" >
+                  
+                  <b-button v-b-modal.modal-multi-2 block class="plavi-gumb-outline" @click="ok()">
+                  Povratak
+                </b-button>
+
+              </b-col>
+               <b-col class="pl-0" sm="6" lg="6" >
+                  
+                   <b-button block v-b-modal.modal-multi-7 class="plavi-gumb-outline" @click="ok()">
+                  Izmjeni
+                </b-button>
+
+              </b-col>
+            </b-row>
+
+          </template>
       </b-modal>
+
+
 
 <!-- Modal Kontakt podaci -->
 
@@ -94,20 +116,20 @@
 
           <template slot="modal-footer" slot-scope="{ ok, cancel, hide }">
             <b-row>
-          <b-col class="pr-0" lg="6" >
-              
-              <b-button v-b-modal.modal-multi-1 block size="sm" variant="success" @click="ok()">
-              Povratak
-            </b-button>
+              <b-col class="pr-0" sm="6" lg="6" >
+                  
+                  <b-button v-b-modal.modal-multi-2 block class="plavi-gumb-outline" @click="ok()">
+                  Povratak
+                </b-button>
 
-          </b-col>
-           <b-col class="pl-0" lg="6" >
-              
-               <b-button block size="sm" variant="success" @click="ok()">
-              Izmjeni
-            </b-button>
+              </b-col>
+               <b-col class="pl-0" sm="6" lg="6" >
+                  
+                   <b-button block v-b-modal.modal-multi-7 class="plavi-gumb-outline" @click="ok()">
+                  Izmjeni
+                </b-button>
 
-          </b-col>
+              </b-col>
             </b-row>
 
           </template>
@@ -115,6 +137,72 @@
 
       </b-modal>
 
+      <!-- Kontakt podaci izmjenjeni -->
+    <b-modal ok-only no-stacking size="xl" id="modal-multi-7" title="Kontakt podaci" >
+    
+        <PrijavaKontaktIzmjena/>
+        <template slot="modal-footer" slot-scope="{ ok, cancel, hide }">
+            <b-row>
+              <b-col class="pr-0" sm="12" lg="12" >
+                  
+                  <b-button v-b-modal.modal-multi-5 block class="plavi-gumb text-center" @click="ok()">
+                  Povratak
+                </b-button>
+
+              </b-col>
+          
+            </b-row>
+
+          </template> 
+      </b-modal>
+
+        <!-- Kontakt podaci poslovne jedinice -->
+    <b-modal ok-only no-stacking size="xl" id="modal-multi-8" title="Poslovne jedinice" >
+    
+        <PrijavaPodaciPoslovna/>
+        <template slot="modal-footer" slot-scope="{ ok, cancel, hide }">
+            <b-row>
+              <b-col class="pr-0" sm="6" lg="6" >
+                  
+                  <b-button v-b-modal.modal-multi-4 block class="plavi-gumb-outline" @click="ok()">
+                  Povratak
+                </b-button>
+
+              </b-col>
+               <b-col class="pl-0" sm="6" lg="6" >
+                  
+                   <b-button block v-b-modal.modal-multi-9 class="plavi-gumb-outline" @click="ok()">
+                  Dodaj
+                </b-button>
+
+              </b-col>
+            </b-row>
+
+          </template>
+      </b-modal>
+
+       <!-- Kontakt podaci poslovne jedinice izmjena -->
+    <b-modal ok-only no-stacking size="xl" id="modal-multi-9" title="Kontakt podaci" >
+    
+        <PrijavaPodaciPoslovnaIzmjena/>
+        <template slot="modal-footer" slot-scope="{ ok, cancel, hide }">
+            <b-row>
+              <b-col class="pr-0" sm="12" lg="12" >
+                  
+                  <b-button v-b-modal.modal-multi-5 block class="plavi-gumb text-center" @click="ok()">
+                  Povratak
+                </b-button>
+
+              </b-col>
+          
+            </b-row>
+
+          </template> 
+      </b-modal>
+
+
+
+      
             
             </b-navbar-nav>
           </b-collapse>
@@ -140,9 +228,12 @@ import Prijava from '@/components/Prijava.vue'
 import PrijavaLoginUspjeh from '@/components/PrijavaLoginUspjeh.vue'
 import PrijavaPonude1 from '@/components/PrijavaPonude1.vue'
 import PrijavaPodaci2 from '@/components/PrijavaPodaci2.vue'
+import PrijavaPodaciPoslovna from '@/components/PrijavaPodaciPoslovna.vue'
+import PrijavaPodaciPoslovnaIzmjena from '@/components/PrijavaPodaciPoslovnaIzmjena.vue'
 import PrijavaKontaktPodaci3 from '@/components/PrijavaKontaktPodaci3.vue'
 import PrijavaSvg from '@/assets/prijava_gumb.svg';
 import PrijavaKontakt from '@/components/PrijavaKontakt.vue'
+import PrijavaKontaktIzmjena from '@/components/PrijavaKontaktIzmjena.vue'
 import Logo from '@/assets/logo.svg';
 
 export default {
@@ -158,7 +249,10 @@ export default {
     PrijavaKontakt,
     PrijavaPodaci2,
     PrijavaPonude1,
-    PrijavaKontaktPodaci3
+    PrijavaKontaktPodaci3,
+    PrijavaKontaktIzmjena,
+    PrijavaPodaciPoslovna,
+    PrijavaPodaciPoslovnaIzmjena
   }
 }
 </script>
