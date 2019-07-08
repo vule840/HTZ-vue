@@ -24,7 +24,7 @@
             id="input-2"
             v-model="form.name"
             required
-            placeholder="Enter name"
+            placeholder="Enter name test"
           ></b-form-input>
         </b-form-group>
 
