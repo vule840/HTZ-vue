@@ -147,7 +147,17 @@
     <b-col  lg="6" >
       <h5>Poslovne jedinice</h5>
       <p>Nema unešenih poslovnih jedinica.</p>
-      <button v-b-modal.modal-multi-8 class="btn plavi-gumb-outline w-100 mb-5">Dodaj poslovnu jedinicu</button>
+
+       <div class="input-group-prepend">
+               <button v-b-modal.modal-multi-8 class="btn plavi-gumb-outline w-100 mb-5">Dodaj poslovnu jedinicu</button>
+
+            <div class=""><PlaviKrizicSvg /></div>
+          </div>
+     
+
+
+
+
     </b-col>
 
   </div>
@@ -161,6 +171,7 @@ import PrijavaSvg from '@/assets/prijava_gumb.svg';
 import PrijavaKontakt from '@/components/PrijavaKontakt.vue'
 import Logo from '@/assets/logo.svg';*/
 import PlavaOlovkaSvg from "@/assets/plava_olovka.svg";
+import PlaviKrizicSvg from "@/assets/plavi_krizic.svg";
   
   export default {
     name: 'PrijavaPodaci',
@@ -168,7 +179,8 @@ import PlavaOlovkaSvg from "@/assets/plava_olovka.svg";
     msg: String
   },
   components: {
-    PlavaOlovkaSvg
+    PlavaOlovkaSvg,
+    PlaviKrizicSvg
    
   },
  
