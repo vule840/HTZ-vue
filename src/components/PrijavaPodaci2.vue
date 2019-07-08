@@ -15,77 +15,120 @@
           description=""
           placeholder="Adria camping"
         >
-          <b-form-input
+      
+         <div class="input-group-prepend">
+              <b-form-input
             id="input-1"
             v-model="form.email"
             type="text"
             required
             placeholder="Adria camping"
           ></b-form-input>
+
+            <div class=""><PlavaOlovkaSvg /></div>
+          </div>
+
+        
+
+
         </b-form-group>
 
     <!-- OIB -->
         <b-form-group id="input-group-2" label="OIB" label-for="input-2">
-          <b-form-input
+             <div class="input-group-prepend">
+                <b-form-input
             id="input-2"
             v-model="form.oib"
             required
             placeholder="35487985498"
           ></b-form-input>
+
+            <div class=""><PlavaOlovkaSvg /></div>
+          </div>
+
         </b-form-group>
     <!-- Adresa -->
         
          <b-form-group id="input-group-3" label="Adresa poslovnog subjekta" label-for="input-3">
-          <b-form-input
+
+           <div class="input-group-prepend">
+                <b-form-input
             id="input-3"
           
             required
             placeholder="Lošinjska 2"
           ></b-form-input>
+
+            <div class=""><PlavaOlovkaSvg /></div>
+          </div>
+          
         </b-form-group>
 
         <!-- Mjesto -->
 
          <b-form-group id="input-group-4" label="Mjesto" label-for="input-4">
-          <b-form-input
+
+          <div class="input-group-prepend">
+             <b-form-input
             id="input-4"
           
             required
             placeholder="Cres"
           ></b-form-input>
+
+            <div class=""><PlavaOlovkaSvg /></div>
+          </div>
+
+          
         </b-form-group>
 
         <!-- Telefon -->
 
          <b-form-group id="input-group-5" label="Telefon" label-for="input-5">
-          <b-form-input
+          <div class="input-group-prepend">
+             <b-form-input
             id="input-5"
             type="number"
             required
             placeholder="052 200 351"
           ></b-form-input>
+
+            <div class=""><PlavaOlovkaSvg /></div>
+          </div>
+          
         </b-form-group>
 
        <!-- E-mail -->
 
          <b-form-group id="input-group-6" label="E-mail" label-for="input-6">
-          <b-form-input
+        
+
+          <div class="input-group-prepend">
+               <b-form-input
             id="input-6"
             type="email"
             required
             placeholder="info@adriacamping.hr"
           ></b-form-input>
+
+            <div class=""><PlavaOlovkaSvg /></div>
+          </div>
         </b-form-group>
     
     <!-- Web adresa-->
 
          <b-form-group id="input-group-7" label="Web adresa" label-for="input-7">
-          <b-form-input
+          <div class="input-group-prepend">
+                 <b-form-input
             id="input-7"
             type="email"
             required
             placeholder="www.adriacamping.hr"
           ></b-form-input>
+
+            <div class=""><PlavaOlovkaSvg /></div>
+          </div>
+        
         </b-form-group>
 
 
@@ -117,7 +160,7 @@ import PrijavaLoginUspjeh from '@/components/PrijavaLoginUspjeh.vue'
 import PrijavaSvg from '@/assets/prijava_gumb.svg';
 import PrijavaKontakt from '@/components/PrijavaKontakt.vue'
 import Logo from '@/assets/logo.svg';*/
-
+import PlavaOlovkaSvg from "@/assets/plava_olovka.svg";
   
   export default {
     name: 'PrijavaPodaci',
@@ -125,7 +168,7 @@ import Logo from '@/assets/logo.svg';*/
     msg: String
   },
   components: {
-   
+    PlavaOlovkaSvg
    
   },
  

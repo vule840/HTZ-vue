@@ -14,36 +14,51 @@
 
 
        <b-form-group class="w-80" id="input-group-1" label="Ime i prezime osobe za kontakt" label-for="input-1">
-        <b-form-input
-          id="input-1"
-          v-model="form.name"
-          required
-          placeholder="Nataša Sikirić"
-        ></b-form-input>
-        <div class="test"></div>
+        
+       
+       <div class="input-group-prepend">
+            <b-form-input
+            id="input-1"
+            v-model="form.name"
+            required
+            placeholder="Nataša Sikirić"
+          ></b-form-input>
+
+            <div class=""><PlavaOlovkaSvg /></div>
+          </div>
       </b-form-group>
 
 
 
       <b-form-group id="input-group-2" label="Funkcija" label-for="input-2">
-        <b-form-input
+        <div class="input-group-prepend">
+            <b-form-input
           id="input-2"
           v-model="form.name"
           required
           placeholder="tajnica"
         ></b-form-input>
 
+            <div class=""><PlavaOlovkaSvg /></div>
+          </div>
+        
+
       </b-form-group>
 
   
 
       <b-form-group id="input-group-3" label="Telefon" label-for="input-3">
-        <b-form-input
+        <div class="input-group-prepend">
+            <b-form-input
           id="input-3"
           v-model="form.name"
           required
           placeholder="098/543 546"
         ></b-form-input>
+
+            <div class=""><PlavaOlovkaSvg /></div>
+          </div>
+        
 
       </b-form-group>
 
@@ -54,13 +69,20 @@
         label="E-mail"
         label-for="input-4">
 
-        <b-form-input
+        
+
+         <div class="input-group-prepend">
+            <b-form-input
           id="input-4"
           v-model="form.email"
           type="email"
           required
           placeholder="natasa.sikiric@adriacamping.hr"
         ></b-form-input>
+
+            <div class=""><PlavaOlovkaSvg /></div>
+          </div>
+        
       </b-form-group>
       
 
@@ -82,6 +104,8 @@
 
 <script>
 
+import PlavaOlovkaSvg from "@/assets/plava_olovka.svg";
+
 /*import Prijava from '@/components/Prijava.vue'
 import PrijavaLoginUspjeh from '@/components/PrijavaLoginUspjeh.vue'
 import PrijavaSvg from '@/assets/prijava_gumb.svg';
@@ -95,7 +119,7 @@ import Logo from '@/assets/logo.svg';*/
     msg: String
   },
   components: {
-   
+   PlavaOlovkaSvg
    
   },
  

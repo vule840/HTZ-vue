@@ -9,7 +9,7 @@
     <b-container >
         <b-row>
           <!-- 1 -->
-          <b-col class="text-left" sm="6" lg="3">
+          <b-col class="text-left mb-sm-3" sm="6" lg="3">
               <h5>KONTAKTI </h5>
           <img width="62" class="pb-2" src="@/assets/htz_logo.png">
           <p>Hrvatska turistička zajednica <br>
@@ -20,7 +20,7 @@
           <p><a href="mailto:info@htz.hr">info@htz.hr</a></p>
           </b-col>
           <!-- 2 -->
-          <b-col class="text-left pb-sm-3" sm="6" lg="3">
+          <b-col class="text-left mb-sm-3" sm="6" lg="3">
               <img width="167" class="pt-5 pb-2 " src="@/assets/hrv_logo.png">
           
                     <p>Ministarstvo turizma
@@ -32,7 +32,7 @@
 
           </b-col>
           <!-- 3 -->
-          <b-col class="text-left footer__mreze" sm="6" lg="3">
+          <b-col class="text-left footer__mreze mb-sm-3" sm="6" lg="3">
              <h5>DRUŠTVENE MREŽE</h5
             >
             <p><a href="#"><FbLogoSvg/> Facebook</a> </p>
@@ -42,7 +42,7 @@
 
           </b-col>
           <!-- 4 -->
-          <b-col class="text-left footer__mreze" sm="6" lg="3">
+          <b-col class="text-left footer__mreze mb-sm-3" sm="6" lg="3">
               <h5>PRAVNE INFORMACIJE</h5>
           <p><a href="#">Politika privatnosti</a></p>
           <p><a href="#">Politika kolačića</a> </p>

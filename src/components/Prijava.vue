@@ -28,25 +28,10 @@
           ></b-form-input>
         </b-form-group>
 
-        <!-- <b-form-group id="input-group-3" label="Food:" label-for="input-3">
-          <b-form-select
-            id="input-3"
-            v-model="form.food"
-            :options="foods"
-            required
-          ></b-form-select>
-        </b-form-group> -->
-
-        <!-- <b-form-group id="input-group-4">
-          <b-form-checkbox-group v-model="form.checked" id="checkboxes-4">
-            <b-form-checkbox value="me">Check me out</b-form-checkbox>
-            <b-form-checkbox value="that">Check that out</b-form-checkbox>
-          </b-form-checkbox-group>
-        </b-form-group> -->
+        
 
         <b-button  v-b-modal.modal-multi-2 class="crveni-gumb w-100" type="submit" variant="primary">Prijava</b-button>
-            <!-- <b-button v-b-modal.modal-multi-2>Open Second Modal</b-button> -->
-       <!--  <b-button type="reset" variant="danger">Reset</b-button> -->
+            
       </b-form>
       <p>Niste registrirani? Da biste kreirali ponudu u akciji “Tjedan odmora vrijedan” prvo se morate  <a href="#"><strong>registrirati ovdje.</strong></a> </p>
       <!-- <b-card class="mt-3" header="Form Data Result">

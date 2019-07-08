@@ -1,14 +1,37 @@
 
 <template>
-  <div id="PrijavaLogin">
+  <div id="PrijavaLoginUspjeh">
      <b-col class="mx-auto" lg="8" >
       <p class="text-center">Odabir opcija</p>
     
-         
+         <b-row>
+                <b-col class="text-center" lg="4" v-b-modal.modal-multi-3>
+          <PonudeOdabir/> <br>
+          <hr>
+          <h5>PONUDE</h5>
+        </b-col>
 
-        <b-button v-b-modal.modal-multi-3 class="plavi-gumb w-100 mb-3">PONUDE</b-button><br>
+        <b-col class="text-center" lg="4" v-b-modal.modal-multi-4>
+           <PodaciOdabir/><br>
+          <hr>
+          <h5>PODACI O SUBJEKTU</h5>
+          
+        </b-col>
+
+        <b-col class="text-center" lg="4" v-b-modal.modal-multi-5>
+
+           <KontaktOdabir/><br>
+          <hr>
+           <h5>KONTAKT PODACI</h5>
+          
+        </b-col>
+
+         </b-row>
+    
+
+        <!-- <b-button v-b-modal.modal-multi-3 class="plavi-gumb w-100 mb-3">PONUDE</b-button><br>
         <b-button v-b-modal.modal-multi-4 class="plavi-gumb w-100 mb-3">PODACI O SUBJEKTU</b-button><br>
-        <b-button v-b-modal.modal-multi-5 size="sm" class="plavi-gumb w-100 mb-3">KONTAKT PODACI</b-button>
+        <b-button v-b-modal.modal-multi-5 size="sm" class="plavi-gumb w-100 mb-3">KONTAKT PODACI</b-button> -->
        <!--  <b-button type="reset" variant="danger">Reset</b-button> -->
      
       <!-- <b-button v-b-modal.modal-multi-3 size="sm">Open Third Modal</b-button> -->
@@ -26,6 +49,9 @@ import PrijavaSvg from '@/assets/prijava_gumb.svg';
 import PrijavaKontakt from '@/components/PrijavaKontakt.vue'
 import Logo from '@/assets/logo.svg';
 
+import PonudeOdabir from '@/assets/Ponude_odabir.svg';
+import PodaciOdabir from '@/assets/Podaci_odabir.svg';
+import KontaktOdabir from '@/assets/Kontakt_odabir.svg';
   
   export default {
     name: 'PrijavaLoginUspjeh',
@@ -37,7 +63,10 @@ import Logo from '@/assets/logo.svg';
     PrijavaSvg,
     Logo,
     PrijavaLoginUspjeh,
-    PrijavaKontakt
+    PrijavaKontakt,
+    PonudeOdabir,
+    PodaciOdabir,
+    KontaktOdabir
   },
 
     data() {

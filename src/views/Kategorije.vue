@@ -22,7 +22,7 @@
 
           </b-col>
           <b-col sm="6" lg="3" >
-              <HranaSvg/>
+              <KulturaSvg/>
               <h5 class="kultura">Kultura i Zabava</h5>
 
           </b-col>
@@ -108,6 +108,7 @@
 import CaruselKategorije from '@/components/CaruselKategorije.vue'
 import GumbSvg from '@/assets/prijava_gumb.svg';
 import SmjestajSvg from '@/assets/smjestaj.svg';
+import KulturaSvg from '@/assets/kultura.svg';
 import HranaSvg from '@/assets/hrana.svg';
 import AktivniSvg from '@/assets/aktivni.svg';
 import PrirodaSvg from '@/assets/priroda.svg';
@@ -132,7 +133,8 @@ export default {
     IzletiSvg,
     PrijevozSvg,
     PaketSvg,
-    OstalaSvg
+    OstalaSvg,
+    KulturaSvg
   },
     data() {
       return {
