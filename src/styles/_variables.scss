@@ -283,6 +283,24 @@ MODAL
 *********************************/
 /* Makni modal header i footer */
 
+@mixin prikazi-footer-modal{
+	.modal-footer{
+     	display: block;
+     	padding: 0;
+     	.row{
+     		margin-top: -1px;
+     	}
+     	button{
+     		border-radius: 0;
+     		border-top: none;
+     		/* &:first-child {
+     						border-right: 0;
+     		} */
+     	}
+     }
+  
+}
+
 .modal-body{
 	input{
 		border-radius: 0;
@@ -346,6 +364,7 @@ div#modal-multi-2___BV_modal_body_ {
 div#modal-multi-3___BV_modal_content_ {
     padding: 2rem 5rem 5rem 5rem;
      border: 1px solid $plava;
+     @include prikazi-footer-modal;
 }
 div#modal-multi-3___BV_modal_body_ {
 	
@@ -356,20 +375,7 @@ div#modal-multi-3___BV_modal_body_ {
 div#modal-multi-4___BV_modal_content_ {
     padding: 2rem 5rem 5rem 5rem;
      border: 1px solid $plava;
-     .modal-footer{
-     	display: block;
-     	padding: 0;
-     	.row{
-     		margin-top: -1px;
-     	}
-     	button{
-     		border-radius: 0;
-     		border-top: none;
-     		/* &:first-child {
-     						border-right: 0;
-     		} */
-     	}
-     }
+     @include prikazi-footer-modal;
 }
 div#modal-multi-4___BV_modal_body_ {
 	
@@ -379,20 +385,7 @@ div#modal-multi-4___BV_modal_body_ {
 div#modal-multi-5___BV_modal_content_ {
     padding: 2rem 5rem 5rem 5rem;
      border: 1px solid $plava;
-     .modal-footer{
-     	display: block;
-     	padding: 0;
-     	.row{
-     		margin-top: -1px;
-     	}
-     	button{
-     		border-radius: 0;
-     		border-top: none;
-     		/* &:first-child {
-     						border-right: 0;
-     		} */
-     	}
-     }
+     @include prikazi-footer-modal;
 }
 div#modal-multi-5___BV_modal_body_ {
 	
@@ -419,19 +412,7 @@ div#modal-multi-7___BV_modal_body_ {
 div#modal-multi-8___BV_modal_content_ {
     padding: 2rem 5rem 5rem 5rem;
      border: 1px solid $plava;
-     .modal-footer{
-     	display: block;
-     	padding: 0;
-     	.row{
-     		margin-top: -1px;
-     	}}
-     	button{
-     		border-radius: 0;
-     		border-top: none;
-     		/* &:first-child {
-     						border-right: 0;
-     		} */
-     	}
+     @include prikazi-footer-modal;
      }
 div#modal-multi-8___BV_modal_body_ {
 	
@@ -442,24 +423,27 @@ div#modal-multi-8___BV_modal_body_ {
 div#modal-multi-9___BV_modal_content_ {
     padding: 2rem 5rem 5rem 5rem;
      border: 1px solid $plava;
-     .modal-footer{
-     	display: block;
-     	padding: 0;
-     	.row{
-     		margin-top: -1px;
-     	}}
-     	button{
-     		border-radius: 0;
-     		border-top: none;
-     		/* &:first-child {
-     						border-right: 0;
-     		} */
-     	}
+     @include prikazi-footer-modal;
      }
 div#modal-multi-9___BV_modal_body_ {
 	
     border: 1px solid $plava;
 }
+
+
+/* Deseti modal */
+div#modal-multi-10___BV_modal_content_ {
+    padding: 2rem 5rem 5rem 5rem;
+     border: 1px solid $plava;
+     @include prikazi-footer-modal;
+     }
+div#modal-multi-10___BV_modal_body_ {
+	
+    border: 1px solid $plava;
+}
+
+
+
 .modal-header .close{
 	position: absolute;
     right: 0;

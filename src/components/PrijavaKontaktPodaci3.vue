@@ -31,6 +31,8 @@
 
 
       <b-form-group id="input-group-2" label="Funkcija" label-for="input-2">
+
+        
         <div class="input-group-prepend">
             <b-form-input
           id="input-2"

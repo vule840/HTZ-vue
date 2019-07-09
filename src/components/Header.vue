@@ -37,24 +37,24 @@
 
          <b-button class="prijava px-4" v-b-modal.modal-multi-1><PrijavaSvg/> PRIJAVA</b-button>
 
-  <b-modal title="Prijava" id="modal-multi-1" size="lg" ok-only no-stacking>
+          <b-modal title="Prijava" id="modal-multi-1" size="lg" ok-only no-stacking>
 
-    <Prijava/>
+            <Prijava/>
 
-    <!-- <b-button v-b-modal.modal-multi-2>Open Second Modal</b-button> -->
+            <!-- <b-button v-b-modal.modal-multi-2>Open Second Modal</b-button> -->
 
-  </b-modal>
+          </b-modal>
 
  <!-- 2 -->
 
-  <b-modal size="xl" id="modal-multi-2" title="Dobro došli Adria camping!" ok-only no-stacking>
+    <b-modal size="xl" id="modal-multi-2" title="Dobro došli Adria camping!" ok-only no-stacking>
 
-    <PrijavaLoginUspjeh/>
+      <PrijavaLoginUspjeh/>
 
 
-    
-     <!-- <b-button v-b-modal.modal-multi-2>Open Third Modal</b-button> -->
-  </b-modal>
+      
+       <!-- <b-button v-b-modal.modal-multi-2>Open Third Modal</b-button> -->
+    </b-modal>
 
    <!-- 3 -->
 
@@ -73,8 +73,26 @@
 
        <b-modal ok-only no-stacking size="xl" id="modal-multi-3" title="Ponude" ok-only>
     
-        <PrijavaPonude1/> <!-- <b-button @click="hide()">Hide Modal</b-button> -->
-        <!-- <b-button v-b-modal.modal-multi-3>Open Fourth Modal</b-button> -->
+        <PrijavaPonude1/> 
+         <template slot="modal-footer" slot-scope="{ ok, cancel, hide }">
+            <b-row>
+              <b-col class="pr-0" sm="6" lg="6" >
+                  
+                  <b-button v-b-modal.modal-multi-2 block class="plavi-gumb-outline" @click="ok()">
+                  Povratak
+                </b-button>
+
+              </b-col>
+               <b-col class="pl-0" sm="6" lg="6" >
+                  
+                   <b-button block v-b-modal.modal-multi-10 class="plavi-gumb-outline" @click="ok()">
+                  Kreiraj ponudu
+                </b-button>
+
+              </b-col>
+            </b-row>
+
+          </template>
       </b-modal>
 
 
@@ -185,7 +203,7 @@
     <b-modal ok-only no-stacking size="xl" id="modal-multi-9" title="Kontakt podaci" >
     
         <PrijavaPodaciPoslovnaIzmjena/>
-        <template slot="modal-footer" slot-scope="{ ok, cancel, hide }">
+          <template slot="modal-footer" slot-scope="{ ok, cancel, hide }">
             <b-row>
               <b-col class="pr-0" sm="12" lg="12" >
                   
@@ -199,7 +217,31 @@
 
           </template> 
       </b-modal>
+     <!-- Ponude Kreiranje ponude / korak 1 -->
+    <b-modal ok-only no-stacking size="xl" id="modal-multi-10" title="Kreiranje ponude" >
+    
 
+        <PrijavaPonudeKreiranjePonude1/>
+          <template slot="modal-footer" slot-scope="{ ok, cancel, hide }">
+            <b-row>
+              <b-col class="pr-0" sm="6" lg="6" >
+                  
+                  <b-button v-b-modal.modal-multi-4 block class="plavi-gumb-outline" @click="ok()">
+                  Povratak
+                </b-button>
+
+              </b-col>
+               <b-col class="pl-0" sm="6" lg="6" >
+                  
+                   <b-button block v-b-modal.modal-multi-9 class="plavi-gumb-outline" @click="ok()">
+                  Sljedeći korak
+                </b-button>
+
+              </b-col>
+            </b-row>
+
+          </template>
+      </b-modal>
 
 
       
@@ -230,6 +272,7 @@ import PrijavaPonude1 from '@/components/PrijavaPonude1.vue'
 import PrijavaPodaci2 from '@/components/PrijavaPodaci2.vue'
 import PrijavaPodaciPoslovna from '@/components/PrijavaPodaciPoslovna.vue'
 import PrijavaPodaciPoslovnaIzmjena from '@/components/PrijavaPodaciPoslovnaIzmjena.vue'
+import PrijavaPonudeKreiranjePonude1 from '@/components/PrijavaPonudeKreiranjePonude1.vue'
 import PrijavaKontaktPodaci3 from '@/components/PrijavaKontaktPodaci3.vue'
 import PrijavaSvg from '@/assets/prijava_gumb.svg';
 import PrijavaKontakt from '@/components/PrijavaKontakt.vue'
@@ -252,7 +295,8 @@ export default {
     PrijavaKontaktPodaci3,
     PrijavaKontaktIzmjena,
     PrijavaPodaciPoslovna,
-    PrijavaPodaciPoslovnaIzmjena
+    PrijavaPodaciPoslovnaIzmjena,
+    PrijavaPonudeKreiranjePonude1
   }
 }
 </script>

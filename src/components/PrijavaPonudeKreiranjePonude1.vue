@@ -4,7 +4,7 @@
      <b-col  lg="12" >
      <!--  <p class="text-center">Odabir opcija</p> -->
            
-      <p class="text-center py-4"><InfoSvg/> &nbsp; Nemate niti jednu aktivnu ponudu </p>
+      Kreiranje ponude
                
     </b-col>
 
@@ -18,17 +18,17 @@ import PrijavaLoginUspjeh from '@/components/PrijavaLoginUspjeh.vue'
 import PrijavaSvg from '@/assets/prijava_gumb.svg';
 import PrijavaKontakt from '@/components/PrijavaKontakt.vue'
 import Logo from '@/assets/logo.svg';*/
- import InfoSvg from '@/assets/info.svg';
+ // import InfoSvg from '@/assets/info.svg';
   
   export default {
 
 
-    name: 'PrijavaPonude',
+    name: 'PrijavaPonudeKreiranjePonude1',
   props: {
     msg: String
   },
   components: {
-    InfoSvg
+    
    
   },
 
