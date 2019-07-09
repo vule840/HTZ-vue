@@ -16,8 +16,8 @@
             <router-link to="/kako-sudjelovati">Kako sudjelovati?</router-link> 
 
              <router-link to="/cesta-pitanja">Česta pitanja</router-link> 
-
-               <router-link to="/registirajte-se">Registirajte se</router-link>
+                <a v-b-modal.modal-multi-11 href="#">Registirajte se</a>
+               <!-- <router-link v-b-modal.modal-multi-11 to="/registirajte-se">Registirajte se</router-link> -->
             </b-navbar-nav>
 
             <!-- Right aligned nav items -->
@@ -73,12 +73,18 @@
 
        <b-modal ok-only no-stacking size="xl" id="modal-multi-3" title="Ponude" ok-only>
     
-        <PrijavaPonude1/> 
+        <b-col  lg="12" >
+           <!--  <p class="text-center">Odabir opcija</p> -->
+                 
+            <p class="text-center py-4"><InfoSvg/> &nbsp; Nemate niti jednu aktivnu ponudu </p>
+                     
+          </b-col>
+
          <template slot="modal-footer" slot-scope="{ ok, cancel, hide }">
             <b-row>
               <b-col class="pr-0" sm="6" lg="6" >
                   
-                  <b-button v-b-modal.modal-multi-2 block class="plavi-gumb-outline" @click="ok()">
+                  <b-button v-b-modal.modal-multi-2 block class="plavi-gumb-outline" @click="onSubmit()">
                   Povratak
                 </b-button>
 
@@ -158,7 +164,10 @@
       <!-- Kontakt podaci izmjenjeni -->
     <b-modal ok-only no-stacking size="xl" id="modal-multi-7" title="Kontakt podaci" >
     
-        <PrijavaKontaktIzmjena/>
+        <div id="PrijavaKontaktIzmjena">
+         <p class="text-center py-4"><InfoSvg/> Vaši kontakt podaci uspješno su izmijenjeni! </p>
+
+        </div>
         <template slot="modal-footer" slot-scope="{ ok, cancel, hide }">
             <b-row>
               <b-col class="pr-0" sm="12" lg="12" >
@@ -202,7 +211,13 @@
        <!-- Kontakt podaci poslovne jedinice izmjena -->
     <b-modal ok-only no-stacking size="xl" id="modal-multi-9" title="Kontakt podaci" >
     
-        <PrijavaPodaciPoslovnaIzmjena/>
+        <b-col  lg="12" > 
+          <p class="text-center py-4"><InfoSvg/> &nbsp; Podaci o subjektu uspješno su izmijenjeni! </p>
+                 
+        </b-col>
+
+
+
           <template slot="modal-footer" slot-scope="{ ok, cancel, hide }">
             <b-row>
               <b-col class="pr-0" sm="12" lg="12" >
@@ -243,6 +258,32 @@
           </template>
       </b-modal>
 
+        <!-- Registracija -->
+    <b-modal ok-only no-stacking size="xl" id="modal-multi-11" title="Kreiranje ponude" >
+    
+
+        <Registracija/>
+        <!--   <template slot="modal-footer" slot-scope="{ ok, cancel, hide }">
+            <b-row>
+              <b-col class="pr-0" sm="6" lg="6" >
+                  
+                  <b-button v-b-modal.modal-multi-4 block class="plavi-gumb-outline" @click="ok()">
+                  Povratak
+                </b-button>
+
+              </b-col>
+               <b-col class="pl-0" sm="6" lg="6" >
+                  
+                   <b-button block v-b-modal.modal-multi-9 class="plavi-gumb-outline" @click="ok()">
+                  Sljedeći korak
+                </b-button>
+
+              </b-col>
+            </b-row>
+
+          </template> -->
+      </b-modal>
+
 
       
             
@@ -266,17 +307,19 @@
 
 <script>
 
+import InfoSvg from '@/assets/info.svg';
 import Prijava from '@/components/Prijava.vue'
 import PrijavaLoginUspjeh from '@/components/PrijavaLoginUspjeh.vue'
-import PrijavaPonude1 from '@/components/PrijavaPonude1.vue'
+/*import PrijavaPonude1 from '@/components/PrijavaPonude1.vue'*/
 import PrijavaPodaci2 from '@/components/PrijavaPodaci2.vue'
 import PrijavaPodaciPoslovna from '@/components/PrijavaPodaciPoslovna.vue'
-import PrijavaPodaciPoslovnaIzmjena from '@/components/PrijavaPodaciPoslovnaIzmjena.vue'
+/*import PrijavaPodaciPoslovnaIzmjena from '@/components/PrijavaPodaciPoslovnaIzmjena.vue'*/
+import Registracija from '@/components/Registracija.vue'
 import PrijavaPonudeKreiranjePonude1 from '@/components/PrijavaPonudeKreiranjePonude1.vue'
 import PrijavaKontaktPodaci3 from '@/components/PrijavaKontaktPodaci3.vue'
 import PrijavaSvg from '@/assets/prijava_gumb.svg';
 import PrijavaKontakt from '@/components/PrijavaKontakt.vue'
-import PrijavaKontaktIzmjena from '@/components/PrijavaKontaktIzmjena.vue'
+/*import PrijavaKontaktIzmjena from '@/components/PrijavaKontaktIzmjena.vue'*/
 import Logo from '@/assets/logo.svg';
 
 export default {
@@ -291,13 +334,19 @@ export default {
     PrijavaLoginUspjeh,
     PrijavaKontakt,
     PrijavaPodaci2,
-    PrijavaPonude1,
     PrijavaKontaktPodaci3,
-    PrijavaKontaktIzmjena,
     PrijavaPodaciPoslovna,
-    PrijavaPodaciPoslovnaIzmjena,
-    PrijavaPonudeKreiranjePonude1
-  }
+    PrijavaPonudeKreiranjePonude1,
+    Registracija,
+
+  },
+    methods: {
+      onSubmit() {
+        console.log('sfsdfsdf')
+
+      }
+    }
+
 }
 </script>
 

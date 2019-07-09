@@ -31,7 +31,7 @@
      class="icon--inline"
 ></svg> -->
      
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+   <!--  <HelloWorld msg="Welcome to Your Vue.js App"/> -->
 
 
   </div>
@@ -39,7 +39,7 @@
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+/*import HelloWorld from '@/components/HelloWorld.vue'*/
 import Carusel from '@/components/Carusel.vue'
 
 
@@ -51,8 +51,8 @@ import Carusel from '@/components/Carusel.vue'
 export default {
   name: 'home',
   components: {
-    HelloWorld,
-    Carusel,
+    /*HelloWorld,*/
+    Carusel
     // VueLogo
   },
     data() {
