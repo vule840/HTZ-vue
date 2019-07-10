@@ -496,30 +496,70 @@ REGISTRACIJA
 	padding: 1.5rem;
 	border-bottom: none;
 }
-.v-step.is-visited .index[data-v-1a92c248]{
-	color: rgba($plava, 0.50);
-}
-.v-step.is-active .index[data-v-1a92c248]{
-	background: $plava;
-	color: #fff; 
+// .v-step.is-visited .index[data-v-1a92c248]{
+// 	color: rgba($plava, 0.50);
+// }
+// .v-step.is-active .index[data-v-1a92c248]{
+// 	background: $plava;
+// 	color: #fff; 
+// }
+@mixin label{
+	.label {
+		span{
+			background: $plava;
+						color: #fff; 
+					}
+		}
+  
 }
 
+.v-step.is-active .label .index[data-v-1a92c248]{
+
+background: $plava ;
+;}
+
+.v-stepper .v-step label .divider{
+	        border-bottom: 5px solid #DDF7FF;
+}
 .v-stepper{
+	.v-stepper-root{
+		.is-active{
+			@include label;	
+				.divider{
+					border-bottom: 5px solid $plava;
+				}
+			}
+		.is-visited{
+				@include label;	
+				.divider{
+					border-bottom: 5px solid $plava;
+				}
+			}
+	}
+	
 	.modal-body label{
 		padding-left: 0;
 	}
 	.v-step{
-		.is-visited{
-			background: $plava;
-			.index{
-				color: $plava;
-			}
-		}
+		// .is-disabled{
+		// 	.label{
+		// 		span{
+		// 			background: $svjetlo-plava;
+		// 			color: rgba($plava, 0.50);
+
+		// 		}
+		// 		.divider{
+		// 			border-bottom: 5px solid $svjetlo-plava;
+		// 		}
+		// 	}
+		
+		// }
+	
 		opacity: 1;
 		label{
 			padding-left: 0;
 			.divider{
-				border-bottom: 5px solid $plava;
+				border-bottom: 5px solid $svjetlo-plava;
 				margin-left: 0;
 			}
 			.index{

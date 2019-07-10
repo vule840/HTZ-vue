@@ -27,55 +27,83 @@
 
   <div class="registracija_okvir">
 
-      <b-row>
-              <b-col class="pr-0" sm="12" lg="12" >
-                  
-                 <b-form @submit="onSubmit" v-if="show">
-                    
-                    <!-- 1 -->
-                    <b-form-group
-                      id="input-group-1"
-                      label="Naziv poslovnog subjekta:"
-                      label-for="input-1"
-                      label-cols-lg="3"
-                    >
-                      <b-form-input
-                        id="input-1"
-                        v-model="form.nazivPoslovnogSubjekta"
-                        type="text"
-                        required
-                        
-                      ></b-form-input>
-                    </b-form-group>
-                    <!-- 2 -->
-                    
-                <b-form-group
-                      id="input-group-1"
-                      label="Naziv poslovnog subjekta:"
-                      label-for="input-1"
-                      label-cols-lg="3"
-                    >
-                      <b-form-input
-                        id="input-1"
-                        v-model="form.nazivPoslovnogSubjekta"
-                        type="text"
-                        required
-                        
-                      ></b-form-input>
-                    </b-form-group>
-
-
-                   
-                  </b-form>  
-
-
-
-
-
-              </b-col>
+      
               
                   
-            </b-row>
+                 <b-form @submit="onSubmit" v-if="show">
+                   <b-row>
+
+                   <!--  Prva kolumna -->
+                    <b-col> 
+                      <label>Poslovni subjekt</label><br>
+                      <b-form-input
+                        id="input-1"
+                        v-model="form.nazivPoslovnogSubjekta"
+                        type="text"
+                        required
+                        placeholder="Adria"
+                      ></b-form-input>
+                   
+        <!-- Druga -->
+                  </b-col>
+                    <b-col>
+                     <label>Poslovna jedinica</label><br>
+                      <b-form-input
+                        id="input-1"
+                        v-model="form.nazivPoslovnogSubjekta"
+                        type="text"
+                        required
+                        
+                      ></b-form-input>
+
+                  </b-col>
+                    
+                  </b-row>
+                
+             <b-row>
+
+                   <!--  Treća kolumna -->
+                    <b-col lg="6"> 
+                      <label>Poslovni subjekt</label><br>
+                      <b-form-input
+                        id="input-1"
+                        v-model="form.nazivPoslovnogSubjekta"
+                        type="text"
+                        required
+                        placeholder="Adria"
+                      ></b-form-input>
+                   
+
+                  </b-col>           
+                    
+           </b-row>
+                
+<!-- Gumbi -->
+       <b-row>
+            <b-col lg="12"> 
+                <p>Butons</p>
+              </b-col> 
+         </b-row>
+
+
+         <!-- Gumbi -->
+       <b-row>
+            <b-col lg="12"> 
+                 <b-form-textarea
+                    id="textarea"
+                    v-model="text"
+                    placeholder="Enter something..."
+                    rows="3"
+                    max-rows="6"
+                  ></b-form-textarea>
+
+    <pre class="mt-3 mb-0">{{ text }}</pre>
+              </b-col> 
+         </b-row>
+
+                 
+             </b-form>  
+
 
 
       <b-button type="submit" variant="primary">Submit</b-button>
@@ -293,6 +321,7 @@ import Logo from '@/assets/logo.svg';*/
       return {
         steps: 3, 
         step: undefined,
+        text: '',
         form: {
           nazivPoslovnogSubjekta: '',
           postanskiBroj: '',

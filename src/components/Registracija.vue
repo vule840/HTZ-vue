@@ -317,7 +317,7 @@ import Logo from '@/assets/logo.svg';*/
     data() {
       return {
         steps: 3, 
-        step: undefined,
+        step: 1,
         form: {
           nazivPoslovnogSubjekta: '',
           postanskiBroj: '',

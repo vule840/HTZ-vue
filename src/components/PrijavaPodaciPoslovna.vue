@@ -15,7 +15,7 @@
         
         </div>   -->
 
-        <b-form-group
+        <b-form-group class="w-80"
           id="input-group-1"
           label="Naziv poslovne jedinice"
           label-for="input-1"
