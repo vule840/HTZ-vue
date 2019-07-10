@@ -11,6 +11,7 @@ $roboto: 'Roboto', sans-serif;;
 // Boje
 $plava: #00386C;
 $crvena: #CF1F25;
+$svjetlo-plava: #DDF7FF;
 
 strong{
 	color: $plava;
@@ -328,6 +329,7 @@ MODAL
 
 .modal-header {
 	justify-content: center;
+	border-bottom: none;
 	.modal-title{
 		color:$plava;
 	font-size: 3rem;
@@ -443,6 +445,17 @@ div#modal-multi-10___BV_modal_body_ {
 }
 
 
+/* 12 modal - registracija uspješna */
+div#modal-multi-12___BV_modal_content_ {
+    padding: 2rem 5rem 5rem 5rem;
+     border: 1px solid $plava;
+
+     }
+div#modal-multi-12___BV_modal_body_ {
+	
+    border: 1px solid $plava;
+}
+
 
 .modal-header .close{
 	position: absolute;
@@ -472,4 +485,55 @@ div#modal-multi-10___BV_modal_body_ {
 	
 }
 
+/*********************************
 
+REGISTRACIJA
+
+*********************************/
+
+.registracija_okvir{
+	border: 1px solid $plava;
+	padding: 1.5rem;
+	border-bottom: none;
+}
+.v-step.is-visited .index[data-v-1a92c248]{
+	color: rgba($plava, 0.50);
+}
+.v-step.is-active .index[data-v-1a92c248]{
+	background: $plava;
+	color: #fff; 
+}
+
+.v-stepper{
+	.modal-body label{
+		padding-left: 0;
+	}
+	.v-step{
+		.is-visited{
+			background: $plava;
+			.index{
+				color: $plava;
+			}
+		}
+		opacity: 1;
+		label{
+			padding-left: 0;
+			.divider{
+				border-bottom: 5px solid $plava;
+				margin-left: 0;
+			}
+			.index{
+				width: 2.5rem;
+				height: 2.5rem;
+				box-shadow: none;
+				background: $svjetlo-plava;
+				color: rgba($plava, 0.50);
+				font-size: 1rem;
+				border: 0;
+				margin-right: 0;
+			}
+		}	
+	}
+	
+
+}

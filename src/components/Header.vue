@@ -259,33 +259,21 @@
       </b-modal>
 
         <!-- Registracija -->
-    <b-modal ok-only no-stacking size="xl" id="modal-multi-11" title="Kreiranje ponude" >
+    <b-modal ok-only no-stacking size="xl" id="modal-multi-11" title="Registracija" >
     
 
         <Registracija/>
-        <!--   <template slot="modal-footer" slot-scope="{ ok, cancel, hide }">
-            <b-row>
-              <b-col class="pr-0" sm="6" lg="6" >
-                  
-                  <b-button v-b-modal.modal-multi-4 block class="plavi-gumb-outline" @click="ok()">
-                  Povratak
-                </b-button>
-
-              </b-col>
-               <b-col class="pl-0" sm="6" lg="6" >
-                  
-                   <b-button block v-b-modal.modal-multi-9 class="plavi-gumb-outline" @click="ok()">
-                  Sljedeći korak
-                </b-button>
-
-              </b-col>
-            </b-row>
-
-          </template> -->
+        
       </b-modal>
 
+          <!-- Registracija Uspješna-->
+          
+    <b-modal ok-only no-stacking size="xl" id="modal-multi-12" title="Registracija" >
+    
 
-      
+  <p>Hvala vam na registraciji! Vaši pristupni podaci poslani su na adresu <a href="mailto:info@adriaticamping.hr">info@adriaticamping.hr</a></p>
+
+</b-modal>
             
             </b-navbar-nav>
           </b-collapse>
