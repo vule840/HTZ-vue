@@ -1,10 +1,9 @@
-
 <template>
-  <div id="Registracija">
+  <div id="KreiranjePonude">
      <b-col  lg="12" >
      <!--  <p class="text-center">Odabir opcija</p> -->
            
-      <p>Unesite podatke o poslovnom subjektu. Podaci koje ćete unijeti na ovoj stranici nakon verifikacije bit će javno dostupni i vidljivi na stranici www.tjedanodmoravrijedan.hr</p>
+      <p>Unesite detalje o vašoj ponudi. <strong>Podaci koje ćete unijeti na ovoj stranici nakon verifikacije bit će javno dostupni i vidljivi na stranici www.tjedanodmoravrijedan.hr</strong> </p>
 
 <!-- https://adi518.github.io/vue-stepper-component/#/ -->
 
@@ -15,27 +14,46 @@
 <!-- Podaci o pos subjk / kontakt podaci -->
        <div v-if="step === 3">
                 
-                <p>Kontakt podaci</p>
+                <p>Podaci za objavu</p>
              
               </div>
               <div v-else>
                    
-                     <p>Podaci o poslovnom subjektu</p>
+                     <p>Detalji o ponudi</p>
               </div>
 
 
 <template v-if="step === 1"><!-- Step 1 Content -->
 
   <div class="registracija_okvir">
-     <b-row>
-              <b-col class="pr-0" sm="6" lg="6" >
+
+      <b-row>
+              <b-col class="pr-0" sm="12" lg="12" >
                   
                  <b-form @submit="onSubmit" v-if="show">
+                    
+                    <!-- 1 -->
                     <b-form-group
                       id="input-group-1"
                       label="Naziv poslovnog subjekta:"
                       label-for="input-1"
-                      
+                      label-cols-lg="3"
+                    >
+                      <b-form-input
+                        id="input-1"
+                        v-model="form.nazivPoslovnogSubjekta"
+                        type="text"
+                        required
+                        
+                      ></b-form-input>
+                    </b-form-group>
+                    <!-- 2 -->
+                    
+                <b-form-group
+                      id="input-group-1"
+                      label="Naziv poslovnog subjekta:"
+                      label-for="input-1"
+                      label-cols-lg="3"
                     >
                       <b-form-input
                         id="input-1"
@@ -46,67 +64,26 @@
                       ></b-form-input>
                     </b-form-group>
 
-<!-- OIB -->
-                    <b-form-group id="input-group-2" label="OIB" label-for="input-2">
-                      <b-form-input
-                        id="input-2"
-                        type="number"
-                        v-model="form.oib"
-                        required
-                        
-                      ></b-form-input>
-                    </b-form-group>
 
-      <!-- Postanski broj -->
-                    <b-form-group class="w-20" id="input-group-3" label="Poštanski broj:" label-for="input-3">
-                      <b-form-input 
-                        id="input-3"
-                        type="number"
-                        v-model="form.postanskiBroj"
-                        required
-                       
-                      ></b-form-input>
-               
-                    </b-form-group>
-
-        <!-- Mjesto -->
-                      <b-form-group class="w-20" id="input-group-3" label="Mjesto:" label-for="input-3">
-                      <b-form-input 
-                        id="input-3"
-                        type="text"
-                        v-model="form.mjesto"
-                        required
-                        
-                      ></b-form-input>
-               
-                    </b-form-group>
-
-       <!-- Adresa poslovnog subjekta -->
-                      <b-form-group class="w-20" id="input-group-3" label="Adresa poslovnog subjekta:" label-for="input-3">
-                      <b-form-input 
-                        id="input-3"
-                        type="text"
-                        v-model="form.adresaPoslovnogSubjekta"
-                        required
-                        
-                      ></b-form-input>
-               
-                    </b-form-group>
-  
                    
+                  </b-form>  
 
 
 
-                    <b-button type="submit" variant="primary">Submit</b-button>
-                    <b-button type="reset" variant="danger">Reset</b-button>
-                  </b-form>
-                  <b-card class="mt-3" header="Form Data Result">
-                    <pre class="m-0">{{ form }}</pre>
-                  </b-card>
+
 
               </b-col>
-          
+              
+                  
             </b-row>
+
+
+      <b-button type="submit" variant="primary">Submit</b-button>
+                    <b-button type="reset" variant="danger">Reset</b-button>
+
+                <b-card class="mt-3" header="Form Data Result">
+                    <pre class="m-0">{{ form }}</pre>
+                  </b-card> 
   </div>  
 
 
@@ -300,20 +277,18 @@ import PrijavaSvg from '@/assets/prijava_gumb.svg';
 import PrijavaKontakt from '@/components/PrijavaKontakt.vue'
 import Logo from '@/assets/logo.svg';*/
  // import InfoSvg from '@/assets/info.svg';
-  import { VStepper } from 'vue-stepper-component'
-
+    import { VStepper } from 'vue-stepper-component'
   export default {
 
 
-   name: 'Registracija',
+    name: 'KreiranjePonude',
   props: {
     msg: String
   },
   components: {
-    
-    VStepper
+      VStepper
+   
   },
-
     data() {
       return {
         steps: 3, 
@@ -335,13 +310,11 @@ import Logo from '@/assets/logo.svg';*/
         show: true
       }
     },
-
     methods: {
       onSubmit(evt) {
-        console.log(JSON.stringify(this.form))
         evt.preventDefault()
         alert(JSON.stringify(this.form))
-      },/*,
+      },
       onReset(evt) {
         evt.preventDefault()
         // Reset our form values
@@ -354,7 +327,7 @@ import Logo from '@/assets/logo.svg';*/
         this.$nextTick(() => {
           this.show = true
         })
-      }*/
+      }
     }
   }
 </script>

@@ -236,7 +236,7 @@
     <b-modal ok-only no-stacking size="xl" id="modal-multi-10" title="Kreiranje ponude" >
     
 
-        <PrijavaPonudeKreiranjePonude1/>
+        <KreiranjePonude/>
           <template slot="modal-footer" slot-scope="{ ok, cancel, hide }">
             <b-row>
               <b-col class="pr-0" sm="6" lg="6" >
@@ -267,7 +267,7 @@
       </b-modal>
 
           <!-- Registracija Uspješna-->
-          
+
     <b-modal ok-only no-stacking size="xl" id="modal-multi-12" title="Registracija" >
     
 
@@ -303,7 +303,7 @@ import PrijavaPodaci2 from '@/components/PrijavaPodaci2.vue'
 import PrijavaPodaciPoslovna from '@/components/PrijavaPodaciPoslovna.vue'
 /*import PrijavaPodaciPoslovnaIzmjena from '@/components/PrijavaPodaciPoslovnaIzmjena.vue'*/
 import Registracija from '@/components/Registracija.vue'
-import PrijavaPonudeKreiranjePonude1 from '@/components/PrijavaPonudeKreiranjePonude1.vue'
+import KreiranjePonude from '@/components/KreiranjePonude.vue'
 import PrijavaKontaktPodaci3 from '@/components/PrijavaKontaktPodaci3.vue'
 import PrijavaSvg from '@/assets/prijava_gumb.svg';
 import PrijavaKontakt from '@/components/PrijavaKontakt.vue'
@@ -324,9 +324,9 @@ export default {
     PrijavaPodaci2,
     PrijavaKontaktPodaci3,
     PrijavaPodaciPoslovna,
-    PrijavaPonudeKreiranjePonude1,
+    KreiranjePonude,
     Registracija,
-
+    InfoSvg
   },
     methods: {
       onSubmit() {
