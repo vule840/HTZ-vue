@@ -64,18 +64,13 @@
               <!--  Treća kolumna -->
               <b-col lg="6">
                   <label>Glavna kategorija</label><br />
-                 <b-form-select v-model="selected" class="mb-3">
-                <option :value="null">Please select an option</option>
-                <option value="a">Option A</option>
-                <option value="b" disabled>Option B </option>
-                <option value="c" disabled>Option c </option>
-                 <option value="d" disabled>Option d </option>
-              </b-form-select>
+                <b-form-select v-model="form.selected" :options="form.options"></b-form-select>
+    <div class="mt-3">Selected: <strong>{{ form.selected }}</strong></div>
 
               <!--   <label>Odaberite glavnu kategoriju</label><br />
                 <b-form-datalist id="input-list" :options="form.glavnaKategorija"></b-form-datalist>
                 <b-form-input list="input-list" id="input-with-list"></b-form-input> -->
-      <div class="mt-2">Selected: <strong>{{ form.selected }}</strong></div>
+ 
 
               </b-col>
             </b-row>
@@ -313,7 +308,7 @@
                   label="Glavna kategorija:"
                   label-for="input-sm"
                 >
-                  <p>{{ form.glavnaKategorija }} </p>
+                  <p>{{ form.selected }} </p>
                 </b-form-group>
 
                 <b-form-group
@@ -530,6 +525,16 @@ export default {
         status: 'not_accepted',
         file: null,
         file2: null,
+        selected: null,
+        clickedButton: null,
+        options: [
+          { value: null, text: 'Please select some item' },
+          { value: 'a', text: 'This is First option' },
+          { value: 'b', text: 'Default Selected Option' },
+          { value: 'c', text: 'This is another option' },
+          
+        ],
+
         /*glavnaKategorija: ['Apple', 'Banana', 'Grape', 'Kiwi', 'Orange']*/
         /*postanskiBroj: "",
         mjesto: "",
@@ -548,6 +553,9 @@ export default {
     onSubmit(evt) {
       evt.preventDefault();
       alert(JSON.stringify(this.form));
+    },
+    getButtonName(event) {
+      this.clickedButton = event.target.name
     },
     onReset(evt) {
       evt.preventDefault();
