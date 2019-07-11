@@ -1,39 +1,40 @@
 
 <template>
   <div id="prijava">
-    <b-col class="mx-auto" lg="8" >
+    <b-col class="mx-auto" lg="7" >
     <h2>Korisnički podaci</h2>
            <b-form @submit="onSubmit" @reset="onReset" v-if="show">
         <b-form-group
           id="input-group-1"
-          label="Email address:"
+          label="E-mail:"
           label-for="input-1"
-          description="We'll never share your email with anyone else."
+         
         >
           <b-form-input
             id="input-1"
             v-model="form.email"
             type="email"
             required
-            placeholder="Enter email"
+            placeholder="Unesite svoj e-mail ili korisničko ime"
           ></b-form-input>
         </b-form-group>
 
-        <b-form-group id="input-group-2" label="Your Name:" label-for="input-2">
+        <b-form-group id="input-group-2" label="Šifra:" label-for="input-2">
           <b-form-input
             id="input-2"
-            v-model="form.name"
+            v-model="form.password"
+            type="password"
             required
-            placeholder="Enter name test"
-          ></b-form-input>
+            placeholder="Unesite svoju šifru"
+          ></b-form-input>   
         </b-form-group>
-
+        <p class="text-right"><a class="zaboravili-sifru" href="#">Zaboravili ste šifru?</a></p>
         
 
-        <b-button  v-b-modal.modal-multi-2 class="crveni-gumb w-100" type="submit" variant="primary">Prijava</b-button>
+        <b-button @click="onSubmit" v-b-modal.modal-multi-2 class="crveni-gumb w-100 " type="submit"  variant="primary">Prijava</b-button>
             
       </b-form>
-      <p>Niste registrirani? Da biste kreirali ponudu u akciji “Tjedan odmora vrijedan” prvo se morate  <a href="#"><strong>registrirati ovdje.</strong></a> </p>
+      <p class="pt-4">Niste registrirani? Da biste kreirali ponudu u akciji “Tjedan odmora vrijedan” prvo se morate  <a v-b-modal.modal-multi-11 href="#"><strong>registrirati ovdje.</strong></a> </p>
       <!-- <b-card class="mt-3" header="Form Data Result">
         <pre class="m-0">{{ form }}</pre>
       </b-card> -->
@@ -53,11 +54,10 @@
       return {
         form: {
           email: '',
-          name: '',
+          password: '',
           // food: null,
           // checked: []
         },
-        foods: [{ text: 'Select One', value: null }, 'Carrots', 'Beans', 'Tomatoes', 'Corn'],
         show: true
       }
     },

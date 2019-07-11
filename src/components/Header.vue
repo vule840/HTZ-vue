@@ -274,7 +274,35 @@
   <p>Hvala vam na registraciji! Vaši pristupni podaci poslani su na adresu <a href="mailto:info@adriaticamping.hr">info@adriaticamping.hr</a></p>
 
 </b-modal>
-            
+
+  <!-- Kreiranje ponude-->
+
+            <b-modal ok-only no-stacking size="xl" id="modal-multi-13" title="Kreiranje ponude" >
+    
+
+    <p class="text-center py-4"><InfoSvg/> &nbsp; Vaša ponuda je uspješno predana i bit će obrađena u roku od tri radna dana. </p>
+    <template slot="modal-footer" slot-scope="{ ok, cancel, hide }">
+            <b-row>
+              <b-col class="pr-0" sm="6" lg="6" >
+                  
+                  <b-button v-b-modal.modal-multi-11 block class="plavi-gumb-outline" @click="ok()">
+                  Povratak
+                </b-button>
+
+              </b-col>
+               <b-col class="pl-0" sm="6" lg="6" >
+                  
+                   <b-button block v-b-modal.modal-multi-11 class="plavi-gumb-outline" @click="ok()">
+                  Kreiraj novu ponudu
+                </b-button>
+
+              </b-col>
+            </b-row>
+
+          </template>
+
+  </b-modal>
+
             </b-navbar-nav>
           </b-collapse>
         </b-navbar>

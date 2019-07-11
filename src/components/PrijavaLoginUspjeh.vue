@@ -5,20 +5,20 @@
       <p class="text-center">Odabir opcija</p>
     
          <b-row>
-                <b-col class="text-center" lg="4" v-b-modal.modal-multi-3>
+                <b-col class="text-center px-3 py-4" lg="4" v-b-modal.modal-multi-3>
           <PonudeOdabir/> <br>
           <hr>
           <h5>PONUDE</h5>
         </b-col>
 
-        <b-col class="text-center" lg="4" v-b-modal.modal-multi-4>
+        <b-col class="text-center px-3 py-4" lg="4" v-b-modal.modal-multi-4>
            <PodaciOdabir/><br>
           <hr>
           <h5>PODACI O SUBJEKTU</h5>
           
         </b-col>
 
-        <b-col class="text-center" lg="4" v-b-modal.modal-multi-5>
+        <b-col class="text-center px-3 py-4" lg="4" v-b-modal.modal-multi-5>
 
            <KontaktOdabir/><br>
           <hr>
@@ -77,7 +77,6 @@ import KontaktOdabir from '@/assets/Kontakt_odabir.svg';
           // food: null,
           // checked: []
         },
-        foods: [{ text: 'Select One', value: null }, 'Carrots', 'Beans', 'Tomatoes', 'Corn'],
         show: true
       }
     },

@@ -15,12 +15,12 @@
         
         </div>   -->
 
-        <b-form-group class="w-80"
+        <b-form-group 
           id="input-group-1"
           label="Naziv poslovne jedinice"
           label-for="input-1"
           description=""
-          placeholder="Adria camping"
+          placeholder="Hotel Minotaur"
         >
           <div class="input-group-prepend">
             <b-form-input
@@ -30,7 +30,7 @@
               placeholder="Adria camping"
             ></b-form-input>
 
-            <div class=""><PlavaOlovkaSvg /></div>
+            <!-- <div class=""><PlavaOlovkaSvg /></div> -->
           </div>
         </b-form-group>
 
@@ -48,7 +48,7 @@
               placeholder="Južna obala 3"
             ></b-form-input>
 
-            <div class=""><PlavaOlovkaSvg /></div>
+            <!-- <div class=""><PlavaOlovkaSvg /></div> -->
           </div>
         </b-form-group>
         <!-- Adresa -->
@@ -62,7 +62,7 @@
               placeholder="Lošinj"
             ></b-form-input>
 
-            <div class=""><PlavaOlovkaSvg /></div>
+            <!-- <div class=""><PlavaOlovkaSvg /></div> -->
           </div>
         </b-form-group>
 
@@ -77,7 +77,7 @@
               placeholder="052 200 351"
             ></b-form-input>
 
-            <div class=""><PlavaOlovkaSvg /></div>
+            <!-- <div class=""><PlavaOlovkaSvg /></div> -->
           </div>
         </b-form-group>
 
@@ -94,7 +94,7 @@
             placeholder="info@minotaur.hr"
           ></b-form-input>
 
-            <div class=""><PlavaOlovkaSvg /></div>
+            <!-- <div class=""><PlavaOlovkaSvg /></div> -->
           </div>
 
         </b-form-group>
@@ -110,7 +110,7 @@
             placeholder="www.hotel-minotaur.hr"
           ></b-form-input>
 
-            <div class=""><PlavaOlovkaSvg /></div>
+            <!-- <div class=""><PlavaOlovkaSvg /></div> -->
           </div>
          
         </b-form-group>

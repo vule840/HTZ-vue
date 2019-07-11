@@ -81,6 +81,8 @@ NAVIGACIJA
 		padding: 0.7rem;
     margin: -0.3rem;
     border-radius: 0;
+
+
 	}
 }
 /*********************************
@@ -243,6 +245,11 @@ GUMBI
 	padding: 0.3rem 5rem;
 	font-weight: bold;
 	border: 0;
+	&:hover{
+		    color: #fff;
+	    background-color: $plava;
+	    border-color: $plava;
+	}
 }
 .plavi-gumb-outline{
 	background: #fff;
@@ -324,7 +331,15 @@ MODAL
 		text-align: center;
 		font-size: 1.5rem;
 		padding: 1rem 0;
+		font-weight: normal;
 	}
+	.crveni-gumb{
+		font-size: 1.3rem;
+	}
+	 .zaboravili-sifru{
+	    	color: #333;
+	    	font-size: 0.8rem;
+	    }
 }
 
 .modal-header {
@@ -455,6 +470,16 @@ div#modal-multi-12___BV_modal_body_ {
 	
     border: 1px solid $plava;
 }
+/* 13 modal - ponuda kreirana */
+div#modal-multi-13___BV_modal_content_ {
+    padding: 2rem 5rem 5rem 5rem;
+     border: 1px solid $plava;
+	@include prikazi-footer-modal;
+     }
+div#modal-multi-13___BV_modal_body_ {
+	
+    border: 1px solid $plava;
+}
 
 
 .modal-header .close{
@@ -527,6 +552,7 @@ background: $plava ;
 			@include label;	
 				.divider{
 					border-bottom: 5px solid $plava;
+					box-shadow: none;
 				}
 			}
 		.is-visited{
@@ -576,4 +602,29 @@ background: $plava ;
 	}
 	
 
+}
+
+
+/*********************************
+
+KREIRANJE PONUDE
+
+*********************************/
+
+.plavi-border{
+	padding: 1rem;
+	border: 1px solid $plava;
+}
+.dodatne-fotke{
+	.img-thumbnail{
+		padding: 0;
+		border: 0;
+		border-radius: 0;
+
+	}
+}
+.registracija_okvir_zadnji{
+	p{
+		color: #CED4DD;
+	}
 }
