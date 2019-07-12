@@ -481,6 +481,20 @@ div#modal-multi-13___BV_modal_body_ {
     border: 1px solid $plava;
 }
 
+/* 14 modal - ponuda kreirana */
+div#modal-multi-14___BV_modal_content_ {
+    padding: 2rem 5rem 5rem 5rem;
+     border: 1px solid $plava;
+	@include prikazi-footer-modal;
+     }
+div#modal-multi-14___BV_modal_body_ {
+	
+    border: 1px solid $plava;
+    .rounded-pill{
+    	padding: 0.3rem 2rem;
+    }
+}
+
 
 .modal-header .close{
 	position: absolute;
@@ -628,3 +642,42 @@ KREIRANJE PONUDE
 		color: #CED4DD;
 	}
 }
+/*********************************
+
+ČESTA PITANJA
+
+*********************************/
+
+.cestaPitanja{
+	.card{
+		border: 0;
+		.btn-secondary{
+
+	    background-color: white; 
+	     border-color: none; 
+	     border: 0;
+	     color: $plava;
+	     text-align: left;
+		}	
+	}
+	.card-body{
+		font-size: 1rem;
+		text-align: left;
+	}
+	
+	.card-header{
+		padding:0;
+		border-bottom: 0;
+		text-align: left;
+		svg{
+			width: 10px;
+		}
+	}
+}
+
+/*********************************
+
+PONUDE
+
+*********************************/
+

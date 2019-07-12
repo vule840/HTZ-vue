@@ -19,7 +19,7 @@
          <div class="input-group-prepend">
               <b-form-input
             id="input-1"
-            v-model="form.email"
+            v-model="form1.NazivPoslovnogObjekta"
             type="text"
             required
             placeholder="Adria camping"
@@ -38,7 +38,8 @@
              <div class="input-group-prepend">
                 <b-form-input
             id="input-2"
-            v-model="form.oib"
+            v-model="form1.oib"
+            type="number"
             required
             placeholder="35487985498"
           ></b-form-input>
@@ -54,7 +55,7 @@
            <div class="input-group-prepend">
                 <b-form-input
             id="input-3"
-          
+            v-model="form1.adresa"
             required
             placeholder="Lošinjska 2"
           ></b-form-input>
@@ -71,7 +72,7 @@
           <div class="input-group-prepend">
              <b-form-input
             id="input-4"
-          
+            v-model="form1.mjesto"
             required
             placeholder="Cres"
           ></b-form-input>
@@ -89,6 +90,7 @@
              <b-form-input
             id="input-5"
             type="number"
+            v-model="form1.telefon"
             required
             placeholder="052 200 351"
           ></b-form-input>
@@ -107,6 +109,7 @@
                <b-form-input
             id="input-6"
             type="email"
+            v-model="form1.email"
             required
             placeholder="info@adriacamping.hr"
           ></b-form-input>
@@ -121,7 +124,8 @@
           <div class="input-group-prepend">
                  <b-form-input
             id="input-7"
-            type="email"
+            type="web"
+            v-model="form1.web"
             required
             placeholder="www.adriacamping.hr"
           ></b-form-input>
@@ -159,9 +163,18 @@
 
 
     </b-col>
+    <b-card class="mt-3" header="Form Data Result">
+                    <pre class="m-0">{{ form1 }}</pre>
+                  </b-card>
 
+
+    
+   
   </div>
+
+
 </template>
+
 
 <script>
 
@@ -186,10 +199,14 @@ import PlaviKrizicSvg from "@/assets/plavi_krizic.svg";
  
     data() {
       return {
-        form: {
+        form1: {
+          NazivPoslovnogObjekta: '',
+          oib: '',
+          adresa: '',
+          mjesto: '',
+          telefon: '',
           email: '',
-          name: '',
-          oib: ''
+          web: '',
           // food: null,
           // checked: []
         },
