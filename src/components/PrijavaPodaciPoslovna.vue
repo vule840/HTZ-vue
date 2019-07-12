@@ -15,22 +15,23 @@
         
         </div>   -->
 
-        <b-form-group class="w-80"
+        <b-form-group 
           id="input-group-1"
           label="Naziv poslovne jedinice"
           label-for="input-1"
           description=""
-          placeholder="Adria camping"
+          placeholder="Hotel Minotaur"
         >
           <div class="input-group-prepend">
             <b-form-input
               id="input-1"
               type="text"
+              v-model="form.nazivPoslovneJedinice"
               required
               placeholder="Adria camping"
             ></b-form-input>
 
-            <div class=""><PlavaOlovkaSvg /></div>
+            <!-- <div class=""><PlavaOlovkaSvg /></div> -->
           </div>
         </b-form-group>
 
@@ -44,11 +45,12 @@
             <b-form-input
               id="input-2"
               type="text"
+              v-model="form.adresaPoslovneJedinice"
               required
               placeholder="Južna obala 3"
             ></b-form-input>
 
-            <div class=""><PlavaOlovkaSvg /></div>
+            <!-- <div class=""><PlavaOlovkaSvg /></div> -->
           </div>
         </b-form-group>
         <!-- Adresa -->
@@ -58,11 +60,12 @@
             <b-form-input
               id="input-3"
               type="text"
+              v-model="form.mjestoPoslovneJedinice"
               required
               placeholder="Lošinj"
             ></b-form-input>
 
-            <div class=""><PlavaOlovkaSvg /></div>
+            <!-- <div class=""><PlavaOlovkaSvg /></div> -->
           </div>
         </b-form-group>
 
@@ -73,11 +76,12 @@
             <b-form-input
               id="input-4"
               type="number"
+              v-model="form.telefonPoslovneJedinice"
               required
               placeholder="052 200 351"
             ></b-form-input>
 
-            <div class=""><PlavaOlovkaSvg /></div>
+            <!-- <div class=""><PlavaOlovkaSvg /></div> -->
           </div>
         </b-form-group>
 
@@ -90,11 +94,12 @@
               <b-form-input
             id="input-5"
             type="email"
+            v-model="form.emailPoslovneJedinice"
             required
             placeholder="info@minotaur.hr"
           ></b-form-input>
 
-            <div class=""><PlavaOlovkaSvg /></div>
+            <!-- <div class=""><PlavaOlovkaSvg /></div> -->
           </div>
 
         </b-form-group>
@@ -106,47 +111,21 @@
                <b-form-input
             id="input-7"
             type="email"
+            v-model="form.webPoslovneJedinice"
             required
             placeholder="www.hotel-minotaur.hr"
           ></b-form-input>
 
-            <div class=""><PlavaOlovkaSvg /></div>
+            <!-- <div class=""><PlavaOlovkaSvg /></div> -->
           </div>
          
         </b-form-group>
 
         <!-- Telefon -->
 
-        <!--  <b-form-group id="input-group-5" label="Telefon" label-for="input-5">
-         <b-form-input
-           id="input-5"
-           type="number"
-           required
-           placeholder="052 200 351"
-         ></b-form-input>
-                </b-form-group>
-        
-               E-mail
-        
-        <b-form-group id="input-group-6" label="E-mail" label-for="input-6">
-         <b-form-input
-           id="input-6"
-           type="email"
-           required
-           placeholder="info@adriacamping.hr"
-         ></b-form-input>
-                </b-form-group>
-            
-            Web adresa
-        
-        <b-form-group id="input-group-7" label="Web adresa" label-for="input-7">
-         <b-form-input
-           id="input-7"
-           type="email"
-           required
-           placeholder="www.adriacamping.hr"
-         ></b-form-input>
-                </b-form-group> -->
+         <b-card class="mt-3" header="Form Data Result">
+                    <pre class="m-0">{{ form }}</pre>
+                  </b-card>
 
         <!--  <b-button  v-b-modal.modal-multi-2 class="crveni-gumb w-100" type="submit" variant="primary">Prijava</b-button> -->
       </b-form>
@@ -182,19 +161,15 @@ export default {
   data() {
     return {
       form: {
-        email: "",
-        name: "",
-        oib: ""
+        nazivPoslovneJedinice: "",
+        adresaPoslovneJedinice: "",
+        mjestoPoslovneJedinice: "",
+        telefonPoslovneJedinice: "",
+        emailPoslovneJedinice: "",
+        webPoslovneJedinice: ""
         // food: null,
         // checked: []
       },
-      foods: [
-        { text: "Select One", value: null },
-        "Carrots",
-        "Beans",
-        "Tomatoes",
-        "Corn"
-      ],
       show: true
     };
   },

@@ -10,10 +10,12 @@
   
         <!--  Prvi row -->
         <b-row>
-          <b-col sm="6" lg="3" >
+          <b-col id="popover-button-sync" @click="show = !show" sm="6" lg="3" >
               <SmjestajSvg/>
               <h5 class="smjestaj">Smještaj</h5>
-
+                <b-popover :show.sync="show" target="popover-button-sync" title="Popover">
+                  Hello <strong>World!</strong>
+                </b-popover>
           </b-col>
 
           <b-col sm="6" lg="3" >
@@ -138,17 +140,19 @@ export default {
   },
     data() {
       return {
-        slide: 0,
-        sliding: null
+        /*slide: 0,
+        sliding: null,*/
+        show: false
       }
     },
     methods: {
-      onSlideStart(slide) {
+      /*onSlideStart(slide) {
         this.sliding = true
       },
       onSlideEnd(slide) {
         this.sliding = false
-      }
+      },*/
+       
     }
 }
 </script>

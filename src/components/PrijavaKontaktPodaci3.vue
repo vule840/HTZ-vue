@@ -36,7 +36,7 @@
         <div class="input-group-prepend">
             <b-form-input
           id="input-2"
-          v-model="form.name"
+          v-model="form.funkcija"
           required
           placeholder="tajnica"
         ></b-form-input>
@@ -53,7 +53,8 @@
         <div class="input-group-prepend">
             <b-form-input
           id="input-3"
-          v-model="form.name"
+          type="number"
+          v-model="form.telefon"
           required
           placeholder="098/543 546"
         ></b-form-input>
@@ -93,9 +94,9 @@
       <b-button type="submit" variant="primary">Submit</b-button>
       
     </b-form>
-    <!-- <b-card class="mt-3" header="Form Data Result">
-      <pre class="m-0">{{ form }}</pre>
-    </b-card> -->
+        <b-card class="mt-3" header="Form Data Result">
+          <pre class="m-0">{{ form }}</pre>
+        </b-card> 
               
     </b-col>
 
@@ -128,12 +129,13 @@ import Logo from '@/assets/logo.svg';*/
     data() {
       return {
         form: {
-          email: '',
           name: '',
+          funkcija: '',
+          telefon: '',
+          email: ''
           // food: null,
           // checked: []
         },
-        foods: [{ text: 'Select One', value: null }, 'Carrots', 'Beans', 'Tomatoes', 'Corn'],
         show: true
       }
     },

@@ -51,7 +51,7 @@
         <b-button class="crveni-gumb w-100" type="submit" variant="primary">Prijava</b-button>
        <!--  <b-button type="reset" variant="danger">Reset</b-button> -->
       </b-form>
-      <p>Niste registrirani? Da biste kreirali ponudu u akciji “Tjedan odmora vrijedan” prvo se morate registrirati ovdje.</p>
+      <p >Niste registrirani? Da biste kreirali ponudu u akciji “Tjedan odmora vrijedan” prvo se morate registrirati ovdje.</p>
       <!-- <b-card class="mt-3" header="Form Data Result">
         <pre class="m-0">{{ form }}</pre>
       </b-card> -->
