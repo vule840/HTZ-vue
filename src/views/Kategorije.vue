@@ -10,12 +10,45 @@
   
         <!--  Prvi row -->
         <b-row>
-          <b-col id="popover-button-sync" @click="show = !show" sm="6" lg="3" >
+          <b-col @click='toggle = !toggle' sm="6" lg="3" >
               <SmjestajSvg/>
               <h5 class="smjestaj">Smještaj</h5>
-                <b-popover :show.sync="show" target="popover-button-sync" title="Popover">
-                  Hello <strong>World!</strong>
-                </b-popover>
+
+             <!--  <div id="popover-button-sync" :show.sync="show">sdfsdf</div>
+               -->
+            
+  <div class="togling" v-show='toggle'>
+     <transition name="fade">
+          <b-list-group>
+      <b-list-group-item>
+
+        <p class="ts" @click='toggle2 = !toggle2'>sdfsdfsdf</p>
+
+
+         <b-list-group v-show='toggle2' class="togling2">
+            <b-list-group-item>fg ggh </b-list-group-item>
+            <b-list-group-item>Dapibus ac facilisis in</b-list-group-item>
+            <b-list-group-item>Morbi leo risus</b-list-group-item>
+            <b-list-group-item>Porta ac consectetur ac</b-list-group-item>
+            <b-list-group-item>Vestibulum at eros</b-list-group-item>
+
+          </b-list-group>
+
+
+         </b-list-group-item>
+      <b-list-group-item>Dapibus ac facilisis in</b-list-group-item>
+      <b-list-group-item>Morbi leo risus</b-list-group-item>
+      <b-list-group-item>Porta ac consectetur ac</b-list-group-item>
+      <b-list-group-item>Vestibulum at eros</b-list-group-item>
+
+    </b-list-group>
+  </transition>
+
+      
+
+</div>
+
+ 
           </b-col>
 
           <b-col sm="6" lg="3" >
@@ -142,7 +175,8 @@ export default {
       return {
         /*slide: 0,
         sliding: null,*/
-        show: false
+         toggle: false,
+         toggle2: false,
       }
     },
     methods: {
@@ -152,7 +186,7 @@ export default {
       onSlideEnd(slide) {
         this.sliding = false
       },*/
-       
+      
     }
 }
 </script>

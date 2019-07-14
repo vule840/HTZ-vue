@@ -11,6 +11,7 @@
          
         >
           <b-form-input
+          ref="prijavaEmail"
             id="input-1"
             v-model="form.email"
             type="email"
@@ -21,6 +22,7 @@
 
         <b-form-group id="input-group-2" label="Šifra:" label-for="input-2">
           <b-form-input
+          ref="prijavaPass"
             id="input-2"
             v-model="form.password"
             type="password"
@@ -65,6 +67,7 @@
       onSubmit(evt) {
         evt.preventDefault()
         alert(JSON.stringify(this.form))
+       
       },
       onReset(evt) {
         evt.preventDefault()

@@ -681,3 +681,30 @@ PONUDE
 
 *********************************/
 
+.togling{
+	position: absolute;
+	// bottom: -24px;
+	background: red;
+	z-index: 1;
+	width: 100%;
+	font-size: 0.8rem;
+}
+.togling{
+	position: absolute;
+	// bottom: -24px;
+	right: 0;
+	background: red;
+	z-index: 1;
+	width: 100%;
+	font-size: 0.8rem;
+}
+.ts{
+	z-index:-1;
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}

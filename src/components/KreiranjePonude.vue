@@ -82,7 +82,7 @@
                 <div class="d-flex justify-content-between mb-3 plavi-border">
                   <b-button-group class="justify-content-between" size="sm">
                     <b-button
-                      :pressed.sync="myToggle"
+                      @click="getButtonName" value="Hoteli"
                       class="plavi-gumb-outline"
                       >Hoteli</b-button
                     >
@@ -550,12 +550,16 @@ export default {
     };
   },
   methods: {
+    test(){
+        console.log(this.$el)
+    },
     onSubmit(evt) {
       evt.preventDefault();
       alert(JSON.stringify(this.form));
     },
     getButtonName(event) {
-      this.clickedButton = event.target.name
+     console.log(event.target.name)
+
     },
     onReset(evt) {
       evt.preventDefault();
